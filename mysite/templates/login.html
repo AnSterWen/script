@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static%}
+{% block view%}
+<div class="container">
+<form  class="col-md-4" method="post" action=".">
+<h3 class="col-md-12" align="center">请登录</h3>
+<input name="username" class="form-control" placeholder="用户名" required autofocus>
+<input name="password" type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+<div class="checkbox">
+<button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+</form>
+</div> 
+{% endblock %}

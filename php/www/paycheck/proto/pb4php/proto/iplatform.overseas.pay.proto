@@ -1,0 +1,50 @@
+message pay_msg_head_t {
+    required string msg_type_name   = 1;//body message name
+    required uint32 game_id         = 2;//game ID
+    required uint32 channel_id      = 3;//third pay channel ID
+    required int32  ret             = 4;//return code
+    required uint32 seq             = 5;//sequence
+    required int32  connect_id 		= 6;     //客户端连接ID,原样返回
+    optional string sign            = 7;//md5(game_id=%u&channel_id=%u&pri_key=%s&data=msg_body), msg_body: binary body
+}
+
+message boss_pay_msg_in_t {
+    //user unique info
+    required int32  server_id       = 1; // server id, defined by game server
+    required uint64 user_id         = 2; // user id, define by ourself
+    required uint64 user_time       = 3; // user create time
+    required uint64 third_user_id   = 4; // user id, define by third party platform
+
+    //order info
+    required string order_id        = 5; // order id
+    required uint64 item_id         = 6; // item id, defined by third platfrom
+    required int32  item_count      = 7; // item count
+    required int32  amount          = 8; // item price (min unit)
+    required int32  real_amount     = 9; // user real pay amount (min unit)
+    required string currency_kind   = 10; // kind of currency: XXX/USD
+    optional uint64 gift_id         = 11 [default = 0]; //present gift ID
+    optional int32  gift_count      = 12 [default = 0]; 
+    optional uint64 consume_time    = 13 [default = 0]; 
+    optional uint64 consume_ip      = 14 [default = 0]; 
+    optional int32  consume_type    = 15 [default = 0];//1-paid,2-free,3-offer
+
+    optional string ext_data        = 16 [default = ""]; // extended data
+
+    //newly add 2014-09-04
+    optional int32  product_add_times   = 17 [default = 100];   // 商品添加倍数,单位: %
+    optional int32  product_attr_int    = 18 [default = 0];     // 商品属性整数值: 含义需要跟策划沟通
+    optional string product_attr_string = 19 [default = ""];    // 商品属性字符串表达式: 含义需要跟策划沟通
+}
+
+message boss_pay_msg_out_t {
+    required string order_id        = 1; // order id
+    required uint64 user_id         = 2; // user id, define by third party platform
+}
+
+message ack_errcode_t {
+    required int32  errcode             = 1;
+    optional string errmsg              = 2 [default = "default error"];
+    optional string ori_msg_typename    = 3 [default = "Unknown"];
+}
+
+

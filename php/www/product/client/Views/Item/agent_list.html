@@ -1,0 +1,70 @@
+<div class="page_title">[$response_data.title]商品短代编码列表</div>
+
+<form method="post" action="index.php?m=[$response_data.model]&a=getagentlist">
+<table style="margin-left:5px">
+	<tr><td>
+		<input type="hidden" name="m" id="m" value="[$response_data.model]" />
+		<input type="hidden" name="a" id="a" value="getitemlist" />
+		<if $response_data.err_str>
+        	<span class="c_red f_14">[$response_data.err_str]</span>
+        </if>
+	</td></tr>
+</table>
+<div class="div_query">
+	<span class="c_orange f_12">商品ID</span>
+	<input type="text" class="inp_j" style="width:85px;" id="item_id" name="item_id" value="[$response_data.query_data.item_id]" />
+	<span class="c_orange f_12">商品名称</span>
+	<input type="text" class="inp_j" style="width:85px;" id="item_name" name="item_name" value="[$response_data.query_data.item_name]" />
+	&nbsp;<input type="image" src="html/images/button_select.gif" style="vertical-align: middle;" />
+</div>
+</form>
+
+<table class="right_table" style="width:838px;margin:0 0 0 5px;table-layout: fixed; word-wrap: break-word;">
+	<tr>
+		<td class="td_row_title">商品ID</td>
+		<td class="td_row_title">商品名称</td>
+		<td class="td_row_title">商品全价(元)</td>
+		<td class="td_row_title">移动MM基地</td>
+		<td class="td_row_title">移动游戏基地</td>
+		<td class="td_row_title">联通沃商店</td>
+		<td class="td_row_title">电信爱游戏</td>
+		<td class="td_row_title">电信天翼空间</td>
+		<td class="td_row_title">操作</td>
+	</tr>
+	<foreach Name="response_data.arr_item_list" Key="key" Var="var">
+		<if 1 == $key % 2>				
+		<tr>
+		<esle>
+		<tr class="tr_odd">
+		</if>
+			<td align="center">[$var.product_id]</td>
+			<td align="center">[$var.name]</td>
+			<td align="center">[$var.price]</td>
+			<td align="center">[$var.mobile_mm]</td>
+			<td align="center">[$var.mobile_game]</td>
+			<td align="center">[$var.unicom_woshop]</td>
+			<td align="center">[$var.telcom_game]</td>
+			<td align="center">[$var.telcom_esurfing]</td>
+			<td align="center">
+				<if $response_data.edit_flag == true>
+				<a href="index.php?m=[$response_data.model]&a=editagentpage&item_id=[$var.product_id]&pid=[$response_data.query_data.item_id]&pname=[$response_data.query_data.item_name]&gid=[$response_data.query_data.item_game_id]&page=[$response_data.page]&ptype=[$response_data.query_data.item_type]&quest_from=1">
+					<!-- <img src="html/images/button_xg.gif" />-->
+					<span class="c_green">编辑</span>
+				</a>
+				<else>
+				-
+				</if>
+			</td>
+		</tr>
+	</foreach>
+	<tr>
+		<td valign="middle" colspan="13" align="center">
+			<table class="page_bar">
+				<tr>
+					<td>[@htmlspecialchars_decode($response_data.page_bar)]</td>
+					<td>[@htmlspecialchars_decode($response_data.goto_bar)]</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

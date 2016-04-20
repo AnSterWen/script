@@ -1,0 +1,85 @@
+<div class="page_title">编辑[$response_data.title]商品短代编码</div>
+
+<form method="post" action="index.php?m=[$response_data.model]&a=editagent&page=[$response_data.page]" onsubmit="return agentSubmit(12,2)">
+<table style="margin-left:5px">
+	<tr><td>
+		<input type="hidden" name="m" id="m" value="[$response_data.model]" />
+		<input type="hidden" name="a" id="a" value="editagent" />
+		<input type="hidden" name="item_id" id="item_id" value="[$response_data.item_id]" />
+		<input type="hidden" name="item_name" id="item_name" value="[$response_data.item_info.name]" />
+		<input type="hidden" name="item_price" id="item_price" value="[$response_data.item_info.price]" />
+		<input type="hidden" name="item_type"  id="item_type" value="[$response_data.item_info.type_id]" />
+		<if $response_data.err_str>
+        	<span class="c_red f_14">[$response_data.err_str]</span>
+        </if>
+		<if $response_data.ok_str>
+			<span class="c_green f_14">[$response_data.ok_str]</span>
+		</if>
+	</td></tr>
+</table>
+<table class="right_desc" style="margin-left:5px">
+	<tr>
+		<td align="right" style="width:200px">商品ID</td>
+		<td style="width:450px">
+			[$response_data.item_id]
+		</td>
+	</tr>
+	<tr>
+		<td align="right">商品名称</td>
+		<td style="width:450px">
+			[$response_data.item_info.name]
+		</td>
+	</tr>
+	<tr>
+		<td align="right">商品全价</td>
+		<td style="width:450px">
+			[$response_data.item_info.price]
+			<span class="c_red">单位: 分</span>
+		</td>
+	</tr>
+</table>
+
+<table class="right_desc" style="margin-left:5px">
+<span class="c_red">以下是商品短代编码，没有则不填</span>
+	<tr>
+		<td align="right" style="width:200px">移动MM基地</td>
+		<td style="width:450px">
+			<input type="text" id="item_mobile_mm" name="item_mobile_mm" value="[$response_data.item_info.mobile_mm]" autocomplete="off" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right">移动游戏基地</td>
+		<td>
+			<input type="text" id="item_mobile_game" name="item_mobile_game" value="[$response_data.item_info.mobile_game]" autocomplete="off" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right">联通沃商店</td>
+		<td>
+			<input type="text" id="item_unicom_woshop" name="item_unicom_woshop" value="[$response_data.item_info.unicom_woshop]" autocomplete="off" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right">电信爱游戏</td>
+		<td>
+			<input type="text" id="item_telcom_game" name="item_telcom_game" value="[$response_data.item_info.telcom_game]" autocomplete="off" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right">电信天翼空间</td>
+		<td>
+			<input type="text" id="item_telcom_esurfing" name="item_telcom_esurfing" value="[$response_data.item_info.telcom_esurfing]" autocomplete="off" />
+		</td>
+	</tr>
+</table>
+
+<table class="right_desc" style="margin-left:5px">
+	<tr>
+		<td></td>
+		<td>
+			<input type="image" src="html/images/button_save.gif" />
+			<a href="[$response_data.front_url]"><img src="html/images/button_back.gif" /></a>
+		</td>
+	</tr>
+</table>
+</form>

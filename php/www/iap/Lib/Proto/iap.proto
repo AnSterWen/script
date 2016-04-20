@@ -1,0 +1,18 @@
+// 包头
+message sw_msg_head_t {
+    required string msg_type_name = 1;
+    required uint32 uid = 2;//或者server_id
+    required uint32 role_tm = 3;//server的话就是0
+    required uint32 ret = 4;
+    required string cli_waiting_msg = 5;//cli表示online或者battle或者login
+    optional uint32 seqno = 6 [default = 0];
+}
+
+// 同步推金豆交易信息
+message sw_tongbu_transaction_in {
+    required int32  svr_id  = 1;
+    required uint32 userid  = 2;
+    required int32  role_tm = 3;
+    required int64  good_id = 4; // 商品ID
+    required int32  price   = 5; // 商品的价格(rmb，单位为分)
+}

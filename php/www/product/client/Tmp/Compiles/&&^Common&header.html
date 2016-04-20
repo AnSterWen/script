@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="html/css/button.css">
+<link rel="stylesheet" type="text/css" href="html/css/form.css">
+<div id="common_header">
+	<div style="margin: 0pt 0pt -20px; background: transparent url(html/images/login_logo.jpg) no-repeat scroll 0pt -5px; padding-top: 10px; width: 443px; height: 79px; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;" class="f_12" id="header_login">
+		<span style="margin-left: 250px;"><font class="c_green"><?php echo $this->tpl_vars["response_data"]["user_name_header"];?></font>，欢迎登录商品管理系统！</span>
+		<span style="margin-left: 250px;">[<a class="c_orange" href="index.php?m=user&amp;a=logout">注销</a>]</span>
+	</div>
+	<div id="header_flash">
+		<object height="76" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0">            
+		<param name="movie" value="html/images/hudie.swf"/>         
+		<param name="quality" value="high"/>         
+		<param name="wmode" value="transparent"/>         
+		<embed width="400" height="76" src="html/images/hudie.swf" wmode="transparent" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"/>
+		</object>
+	</div> 
+    <div class="clear"></div>
+    <div class="header_nav"><a href="#">商品管理</a></div>
+    <div class="header_nav"><a href="index.php?m=common&a=log">操作审计</a></div>
+</div>

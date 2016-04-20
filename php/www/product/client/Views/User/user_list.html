@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    function delete_user(id){
+        $.get("index.php",{'m':'admin_user','a':'delete_user','id':id},function(data){
+            if(data.indexOf('ok') >= 0){
+                $("#user_" + id).remove();
+            }
+        })
+    }
+</script>
+<br>
+<a style="float: right" class="button white" href="javascript:loadMainRight('index.php?m=admin_user&a=add_user');">添加用户</a>
+
+<div class="page_title">[$response_data.title]列表</div>
+
+<table class="right_table" style="width:838px;margin:0 0 0 5px;table-layout: fixed; word-wrap: break-word;">
+    <tr>
+        <td class="td_row_title">用户ID</td>
+        <td class="td_row_title">用户名</td>
+        <td class="td_row_title">操作</td>
+    </tr>
+    <foreach Name="response_data.result" Key="key" Var="var">
+        <if 1 == $key % 2>
+            <tr id="user_[$var.id]">
+        <esle>
+            <tr id="user_[$var.id]" class="tr_odd">
+        </if>
+                <td align="center">[$var.id]</td>
+                <td align="center">[$var.user_name]</td>
+                <td align="center">
+                   <a style="cursor: pointer" href="javascript:void(0)" onclick="delete_user('[$var.id]')">删除</a>
+                </td>
+
+            </tr>
+    </foreach>
+
+</table>

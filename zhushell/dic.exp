@@ -1,0 +1,44 @@
+#!/usr/bin/expect
+
+set names {
+   online1 127.0.0.1
+   online2 127.0.0.2
+   online3 127.0.0.3
+}
+
+#puts [dict size $names]
+#puts [dict size {}]
+#puts [dict exists $names online1]
+#puts [dict keys $names]
+#puts [dict keys $names online*]
+#puts [dict values $names]
+#puts [dict values $names *3*]
+#dict for {key value} $names {
+#    puts "$key...$value"
+#}
+#puts [dict get $names online1]
+#puts [dict filter $names key online*]
+#puts [dict filter $names value *3*]
+puts [string match a* alphabet]
+puts [string match a* alphabet]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

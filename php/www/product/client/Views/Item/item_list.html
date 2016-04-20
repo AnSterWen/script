@@ -1,0 +1,111 @@
+<div class="page_title">[$response_data.title]商品列表</div>
+
+<form method="post" action="index.php?m=[$response_data.model]&a=getitemlist">
+<table style="margin-left:5px">
+	<tr><td>
+		<input type="hidden" name="m" id="m" value="[$response_data.model]" />
+		<input type="hidden" name="a" id="a" value="getitemlist" />
+		<if $response_data.err_str>
+        	<span class="c_red f_14">[$response_data.err_str]</span>
+        </if>
+	</td></tr>
+</table>
+<div class="div_query">
+    <input type="hidden" name="type" value="post">
+	<span class="c_orange f_12">商品ID</span>
+	<input type="text" class="inp_j" style="width:85px;" id="item_id" name="item_id" value="[$response_data.query_data.item_id]" />
+	<span class="c_orange f_12">游戏物品ID</span>
+	<input type="text" class="inp_j" style="width:85px;" id="item_game_id" name="item_game_id" value="[$response_data.query_data.item_game_id]" />
+	<span class="c_orange f_12">商品名称</span>
+	<input type="text" class="inp_j" style="width:85px;" id="item_name" name="item_name" value="[$response_data.query_data.item_name]" />
+    <span class="c_orange f_12">目录ID</span>
+    <input type="text" class="inp_j" style="width:85px;" id="index_id" name="index_id" value="[$response_data.query_data.index_id]" />
+	&nbsp;<input type="image" src="html/images/button_select.gif" style="vertical-align: middle;" />
+</div>
+</form>
+
+<table class="right_table" style="width:838px;margin:0 0 0 5px;table-layout: fixed; word-wrap: break-word;">
+	<tr>
+		<td class="td_row_title">商品ID</td>
+		<td class="td_row_title" width="9%">游戏物品ID</td>
+		<td class="td_row_title">商品名称</td>
+		<td class="td_row_title">商品全价(元)</td>
+		<td class="td_row_title">折扣</td>
+		<td class="td_row_title">活动起始时间</td>
+		<td class="td_row_title">活动结束时间</td>
+		<td class="td_row_title">有效</td>
+		<td class="td_row_title">目录ID</td>
+        <td class="td_row_title">属性</td>
+        <td class="td_row_title">倍数</td>
+        <!--<td class="td_row_title">版本号</td>-->
+        <td class="td_row_title" style="width: 80px">操作</td>
+	</tr>
+	<foreach Name="response_data.arr_item_list" Key="key" Var="var">
+		<if 1 == $key % 2>				
+		<tr>
+		<esle>
+		<tr class="tr_odd">
+		</if>
+			<td align="center">[$var.product_id]</td>
+			<!--
+			<td align="center">[@str_replace(',', ',<p>', $var.game_id)]</td>
+			-->
+			<td align="center">
+                <!--[$var.items]-->
+                [$var.items]
+            </td>
+			<td align="center">[$var.name]</td>
+			<td align="center">[$var.price]</td>
+			<td align="center">[$var.discount]</td>
+			<td align="center">[$var.start]</td>
+			<td align="center">[$var.end]</td>
+			<td align="center">
+				<if $var.is_valid == 1>
+					<span class="c_green">
+						是
+					</span>
+				<elseif $var.is_valid == 2>
+					<span class="c_red">
+						测试
+					</span>
+				<else>
+				<span class="c_red">
+					否
+				</span>
+				</if>
+			</td>
+			<td align="center">[$var.category]</td>
+            <td align="center">[$var.product_attr]</td>
+            <td align="center">[$var.add_times]</td>
+            <!--<td align="center">[$var.client_version]</td>-->
+			<td align="center">
+				<if $response_data.edit_flag == true>
+                    <a href="index.php?m=[$response_data.model]&a=edititempage&item_id=[$var.product_id]&pid=[$response_data.query_data.item_id]&pname=[$response_data.query_data.item_name]&gid=[$response_data.query_data.item_game_id]&page=[$response_data.page]&ptype=[$response_data.query_data.item_type]&quest_from=1">
+                        <!-- <img src="html/images/button_xg.gif" />-->
+                        <span class="c_green">修改</span>
+                    </a>
+                    <a href="index.php?m=[$response_data.model]&a=addmbitempage&item_id=[$var.product_id]&pname=[@urlencode($var.name)]&discount=[$var.org_discount]&start=[$var.start]&end=[$var.end]&price=[$var.price]&category=[$var.category]&base=[$var.base]&gift=[$var.gift]&j_flag=copy">
+                        <!-- <img src="html/images/button_xg.gif" />-->
+                        <span class="c_green">复制</span>
+                    </a>
+				<else>
+				-
+				</if>
+				<a href="index.php?m=[$response_data.model]&a=trade&subject=[$var.product_id]">
+					<span class="c_green">购买</span>
+				</a>
+
+			</td>
+		</tr>
+	</foreach>
+	<tr>
+		<td valign="middle" colspan="13" align="center">
+			<table class="page_bar">
+				<tr>
+					<td>[@htmlspecialchars_decode($response_data.page_bar)]</td>
+					<td>[@htmlspecialchars_decode($response_data.goto_bar)]</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

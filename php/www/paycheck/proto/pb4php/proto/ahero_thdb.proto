@@ -1,0 +1,70 @@
+message db_msgheader_t {
+    // 前三个是DB框架要求的字段，不能改变含义
+    required bytes msg_name   = 1; // 协议名字
+    required uint32 target_uid = 2; // 要操作的米米号
+    required uint32 errcode    = 3; // DB返回的错误码
+    // 后五个是Online可以自定义含义的变量
+    optional uint32 reg_time   = 4; // 要操作的角色的创建时间，限定同一个米米号不能在同一秒创建两个角色
+    optional uint32 src_uid    = 5; // 发起操作请求的米米号，如果需要记录日志，或者需要处理DB返回，则必须设置本字段。
+    optional uint32 login_id   = 6; // 发起操作请求的米米号的登录ID，每次登录都不一样，用于DB返回时，Online判断玩家是否
+                                    // 已经重新登录或者Online是否已经重启。如果没有设置该字段，则表明无需处理DB返回包。
+    optional bytes aux        = 7; // 辅助信息，目前通过aux.size()来判断是否需要给客户端返回
+    optional uint32 trans_id   = 8; // 请求ID，Online用这个来一一对应请求和返回，并写日志记录请求是否成功。
+                                    // 如果不需要写日志，则无需设置该字段。
+                                    // ahero 项目目前用改字段表示玩家渠道号
+}
+
+message db_player_pvai_info_t {
+    required uint32 rank            = 1;    // 排名
+    required uint32 accu_coin        = 2;    // 累计金币奖励
+    required uint32 accu_reputation    = 3;       // 累计声望奖励
+    required uint32 accu_times        = 4;    // 累计时长(小时为单位)
+    required uint32 accu_end_time    = 5;    // 上次累计结束时间点
+}
+
+message db_player_attr_t {
+    required uint32 key                = 1;
+    required uint32 value            = 2;
+    required uint32 dead_tm            = 3;
+}
+
+message db_player_info_t {
+    required uint64 userid        = 1;    // 米米号
+    required uint32 reg_time    = 2;    // 注册时间
+    optional uint32 level        = 3;    // 玩家等级
+    optional bytes     name        = 4;    // 玩家昵称
+    optional uint32 type        = 5;    // 玩家职业
+    optional uint32 gender        = 6;    // 玩家性别
+    optional uint32 zone_id        = 7;    // 玩家所在服务器
+    optional uint32 vip_lv        = 8;    // 玩家vip
+    optional db_player_pvai_info_t pvai_info    = 9;    // 玩家pvai信息
+    repeated db_player_attr_t player_attr        = 10;    // 玩家属性
+    optional uint32 kill_num     = 11;    // 该玩家击败次数
+    repeated uint32 fairy        = 12;    // 特殊位置精灵
+    optional uint32 globalid      = 13;   // 全局ID
+    optional uint32 last_login_tm = 14;   //上次登录时间
+    optional uint32 acc_consume      = 15;      //累计充值金额
+    optional bool    gm                = 16;      //是否为GM
+}
+
+message db_get_role_list_in {
+    required uint32 zone_id               = 1; // 为0时查询所有服务器角色列表)
+    required uint64 userid                = 2;
+    optional uint32 check_freeze          = 3[default=0]; //0不要确认封号状态，1需要确认
+}
+
+message db_get_role_list_out {
+    required uint32 zone_id               = 1;
+    repeated db_player_info_t roles          = 2;    // 角色列表
+    optional uint32 freeze_status         = 3[default=0]; //0未被封，1被封号
+}
+
+message db_role_exist_by_gm_in {
+    required uint64 user_id               = 1;
+    required uint32 reg_tm                = 2;
+    required uint32 zone_id               = 3;
+}
+
+message db_role_exist_by_gm_out {
+    optional bool   is_exist              = 1[default = false];
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>商品管理系统</title>
+<link rel="stylesheet" type="text/css" href="html/css/css.css">
+<script type="text/javascript" src="html/js/jquery.js"></script>
+<script type="text/javascript" src="html/js/functions.js"></script>
+</head>
+<body style="background: url(html/images/login_bg.gif) repeat-x; ">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="76" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="right"  valign="top"><table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="html/images/login_top_left.gif" width="37" height="25" /></td>
+            <td width="180" align="center" background="html/images/login_top_bg.gif" id="top"><a href="http://www.51mole.com/" target="_self">进入庄园</a> |  <a href="http://blog.51mole.com/" target="_self">官方博客</a> | <a href="http://bbs.51mole.com/" target="_self">摩尔论坛</a></td>
+            <td><img src="html/images/login_top_right.gif" width="37" height="25" /></td>
+            <td width="5%">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <a href="#"><img src="html/images/login_logo.jpg" width="443" height="79" class="login_logo" /></a></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="400" align="center" valign="middle" style="background:url(html/images/login_index_bg.gif) center no-repeat;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center"><img src="html/images/login_item_txt.jpg" width="554" height="58" /></td>
+      </tr>
+    </table>
+      <br />
+      <br />
+      <table border="0" cellpadding="0" cellspacing="5">
+      <if $response_error.login>
+	      <tr>
+	      	<span><font color="red">[$response_error.login]</font></span>
+	      </tr>
+	  </if>
+      <tr>
+        <td><table border="0" cellspacing="0" cellpadding="5">
+          
+          <tr>
+            <td width="140" align="right" valign="top"><img src="html/images/mole_item.jpg" /></td>
+            <td>
+            <if $response_error.login != '你已经登录，请不要重复登陆！'>
+            <form name="frm_login" id="frm_login" method="post" action="index.php?m=user&a=login">
+                <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                  <tr>
+		            <td colspan="2"><span id="err_str">[$err_str]</span></td>
+		          </tr>
+                  <tr> 
+                    <td align="right">用户名：</td>
+                    <td align="left"><input name="user_name" id="user_name" type="text" style="width:120px" ondblclick="this.value='';"  />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right">密码：</td>
+                    <td align="left"><input name="pwd" id="pwd" type="password" style="width:120px" /></td>
+                  </tr>
+                <!--<tr>
+                    <td align="right">验证码：</td>
+                    <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+                       <tr>
+				           <td><input name="verify" type="text" id="verify" tabindex="3" maxlength="4" class="width_100" />&nbsp;</td>
+						   <td><img src="verify.php" width="48" height="22" id="img_verify" />&nbsp;</td>
+						   <td><a href="javascript:refleshImg('img_verify')" class="f12_gary">换一张</a></td>
+			          </tr>
+                    </table></td>
+                  </tr>-->
+                  <tr>
+                    <td align="right">
+                      <input type="hidden" name="inp_login" value="inp_login" />
+                      <input type="hidden" name="m" value="user" />
+                      <input type="hidden" name="a" value="login" />
+                    </td>
+                    <td align="left">
+                    <input type="image" name="imageField" id="imageField" src="html/images/login_b.gif" tabindex="4"/>
+                    
+                    </td>
+                  </tr>
+                </table>
+            </form>
+            <else>
+            	<a href="index.php?m=ahero">返回首页</a>
+            </if>
+            </td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>    
+      <br />
+    <br /></td>
+  </tr>
+</table>
+<br /><br /><br />
+<div id="login_bottom">Copyright © 2008 TaoMee Inc. All Rights Reserved </div>
+
+</body>
+</html>

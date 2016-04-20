@@ -1,0 +1,153 @@
+<div class="page_title">添加[$response_data.title]商品</div>
+
+<form method="post" action="index.php?m=[$response_data.model]&a=addmbitem" onsubmit="return itemSubmit([$response_data.flag],1)">
+<table style="margin-left:5px">
+	<tr><td>
+		<input type="hidden" name="m" id="m" value="[$response_data.model]" />
+		<input type="hidden" name="a" id="a" value="addmbitem" />
+		<if $response_data.err_str>
+        	<span class="c_red f_14">[$response_data.err_str]</span>
+        </if>
+	</td></tr>
+</table>
+
+<table class="right_desc" style="margin-left:5px">
+	<tr>
+		<td align="right">商品名称</td>
+		<td>
+			<input type="text" id="item_name" name="item_name" value="[$response_data.item_info.product_name]" />
+			<span class="c_red">批量添加则用英文逗号将普通商品名称隔开</span>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">游戏中物品ID</td>
+		<td>
+			<input type="text" id="item_game_id" name="item_game_id" value="[$response_data.item_info.itemid]" autocomplete="off" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right">游戏中物品数量</td>
+		<td>
+			<input type="text" id="item_count" name="item_count" value="[$response_data.item_info.base]" autocomplete="off" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right">赠送物品数量</td>
+		<td>
+			<input type="text" id="item_gift" name="item_gift" value="[$response_data.item_info.gift]" autocomplete="off" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right">商品全价</td>
+		<td>
+			<input type="text" id="item_price" name="item_price" value="[$response_data.item_info.price]" />
+			<span class="c_red">以分为单位</span>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">折扣</td>
+		<td>
+			<input type="text" id="user_discount" name="user_discount" value="[$response_data.item_info.discount]" />
+			<span class="c_red">0-100之间</span>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">活动起始时间</td>
+		<td>
+			<input type="text" id="start" name="start" value="[$response_data.item_info.start]" />
+			<span class="c_red">格式严格如:(2013-01-04 12:00)</span>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">活动结束时间</td>
+		<td>
+			<input type="text" id="current_stocks" name="current_stocks" value="[$response_data.item_info.end]" />
+			<span class="c_red">格式严格如:(2013-01-04 12:00)</span>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">目录</td>
+		<td>
+			<if $response_data.item_info.category>
+				<input type="text" id="item_category" name="item_category" value="[$response_data.item_info.category]" />
+			<else>
+				<input type="text" id="item_category" name="item_category" value="1" />
+			</if>
+			<span class="c_red">目录ID：自行定义，设置为0时请谨慎，第一个版本默认为0</span>
+		</td>
+	</tr>
+    <tr>
+        <td align="right">属性</td>
+        <td>
+            <input type="text" id="product_attr" name="product_attr" value="[$response_data.item_info.product_attr]" />
+            <span class="c_red">商品属性值，值的具体含义请自行定义</span>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">倍数</td>
+        <td>
+            <input type="text" id="add_times" name="add_times" value="[$response_data.item_info.add_times]" />
+            <span class="c_red">商品添加的倍数(实际倍数需要除以100)</span>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">扩展字段</td>
+        <td>
+            <textarea id="extend_data" name="extend_data" cols="25" rows="2"></textarea>
+            <span class="c_red">具体格式请自行定义（务必与游戏后台保持一致)</span>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">第三方平台别名</td>
+        <td>
+            <input type="text" id="product_third_name" name="product_third_name" value="[$response_data.item_info.product_third_name]" />
+            <span class="c_red">商品在第三方平台上别名</span>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">版本号</td>
+        <td>
+            <input type="text" id="client_version" name="client_version" value="[$response_data.item_info.client_version]" />
+            <span class="c_red">客户端svn的版本号</span>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">第三方商品价格</td>
+        <td>
+            <input type="text" id="third_price" name="third_price" value="[$response_data.item_info.third_price]" />
+            <span class="c_red">第三方商品价格</span>
+        </td>
+    </tr>
+	<tr>
+		<td align="right">商品是否有效</td>
+		<td>
+			<if $response_data.item_info.is_valid == 1>
+				<input type="radio" name="if_effective" value="1" checked="checked" />是
+				<input type="radio" name="if_effective" value="0" />否
+				<input type="radio" name="if_effective" value="2" />测试
+			<elseif $response_data.item_info.is_valid == 0 && $response_data.item_info.is_valid != NULL>
+				<input type="radio" name="if_effective" value="1" />是
+				<input type="radio" name="if_effective" value="0" checked="checked" />否
+				<input type="radio" name="if_effective" value="2" />测试
+			<elseif $response_data.item_info.is_valid == 2>
+				<input type="radio" name="if_effective" value="1" />是
+				<input type="radio" name="if_effective" value="0" />否
+				<input type="radio" name="if_effective" value="2" checked="checked"/>测试
+			<elseif !$response_data.item_info.is_valid>
+				<input type="radio" name="if_effective" value="1" checked="checked" />是
+				<input type="radio" name="if_effective" value="0" />否
+				<input type="radio" name="if_effective" value="2" />测试
+			</if>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+            <input type="image" src="html/images/button_add.gif" />
+            <if $response_data.j_flag == 'copy'>
+                <a href="index.php?m=[$response_data.model]&a=getitemlist"><img src="html/images/button_back.gif" /></a>
+            </if>
+        </td>
+	</tr>
+</table>
+</form>

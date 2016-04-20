@@ -1,0 +1,112 @@
+<div class="page_title"><?php echo $this->tpl_vars["response_data"]["title"];?>商品列表</div>
+
+<form method="post" action="index.php?m=<?php echo $this->tpl_vars["response_data"]["model"];?>&a=getitemlist">
+<table style="margin-left:5px">
+	<tr><td>
+		<input type="hidden" name="m" id="m" value="<?php echo $this->tpl_vars["response_data"]["model"];?>" />
+		<input type="hidden" name="a" id="a" value="getitemlist" />
+		<?php if($this->tpl_vars['response_data']['err_str']): ?>
+        	<span class="c_red f_14"><?php echo $this->tpl_vars["response_data"]["err_str"];?></span>
+        <?php endif;?>
+	</td></tr>
+</table>
+<div class="div_query">
+    <input type="hidden" name="type" value="post">
+	<span class="c_orange f_12">商品ID</span>
+	<input type="text" class="inp_j" style="width:85px;" id="item_id" name="item_id" value="<?php echo $this->tpl_vars["response_data"]["query_data"]["item_id"];?>" />
+	<span class="c_orange f_12">游戏物品ID</span>
+	<input type="text" class="inp_j" style="width:85px;" id="item_game_id" name="item_game_id" value="<?php echo $this->tpl_vars["response_data"]["query_data"]["item_game_id"];?>" />
+	<span class="c_orange f_12">商品名称</span>
+	<input type="text" class="inp_j" style="width:85px;" id="item_name" name="item_name" value="<?php echo $this->tpl_vars["response_data"]["query_data"]["item_name"];?>" />
+    <span class="c_orange f_12">目录ID</span>
+    <input type="text" class="inp_j" style="width:85px;" id="index_id" name="index_id" value="<?php echo $this->tpl_vars["response_data"]["query_data"]["index_id"];?>" />
+	&nbsp;<input type="image" src="html/images/button_select.gif" style="vertical-align: middle;" />
+</div>
+</form>
+
+<table class="right_table" style="width:838px;margin:0 0 0 5px;table-layout: fixed; word-wrap: break-word;">
+	<tr>
+		<td class="td_row_title">商品ID</td>
+		<td class="td_row_title" width="9%">游戏物品ID</td>
+		<td class="td_row_title">商品名称</td>
+		<td class="td_row_title">商品全价(元)</td>
+		<td class="td_row_title">折扣</td>
+		<td class="td_row_title">活动起始时间</td>
+		<td class="td_row_title">活动结束时间</td>
+		<td class="td_row_title">有效</td>
+		<td class="td_row_title">目录ID</td>
+        <td class="td_row_title">属性</td>
+        <td class="td_row_title">倍数</td>
+        <!--<td class="td_row_title">版本号</td>-->
+        <td class="td_row_title" style="width: 80px">操作</td>
+	</tr>
+	<?php if(!empty($this->tpl_vars['response_data']['arr_item_list'] )): 
+ foreach ($this->tpl_vars['response_data']['arr_item_list'] as  $this->tpl_vars['key']=>$this->tpl_vars['var']): ?>
+		<?php if(1 == $this->tpl_vars['key'] % 2): ?>				
+		<tr>
+		<esle>
+		<tr class="tr_odd">
+		<?php endif;?>
+			<td align="center"><?php echo $this->tpl_vars["var"]["product_id"];?></td>
+			<!--
+			<td align="center"><?php echo str_replace(',', ',<p>', $this->tpl_vars["var"]["game_id"]);?></td>
+			-->
+			<td align="center">
+                <!--<?php echo $this->tpl_vars["var"]["items"];?>-->
+                <?php echo $this->tpl_vars["var"]["items"];?>
+            </td>
+			<td align="center"><?php echo $this->tpl_vars["var"]["name"];?></td>
+			<td align="center"><?php echo $this->tpl_vars["var"]["price"];?></td>
+			<td align="center"><?php echo $this->tpl_vars["var"]["discount"];?></td>
+			<td align="center"><?php echo $this->tpl_vars["var"]["start"];?></td>
+			<td align="center"><?php echo $this->tpl_vars["var"]["end"];?></td>
+			<td align="center">
+				<?php if($this->tpl_vars['var']['is_valid'] == 1): ?>
+					<span class="c_green">
+						是
+					</span>
+				<?php elseif($this->tpl_vars['var']['is_valid'] == 2): ?>
+					<span class="c_red">
+						测试
+					</span>
+				<?php else: ?>
+				<span class="c_red">
+					否
+				</span>
+				<?php endif;?>
+			</td>
+			<td align="center"><?php echo $this->tpl_vars["var"]["category"];?></td>
+            <td align="center"><?php echo $this->tpl_vars["var"]["product_attr"];?></td>
+            <td align="center"><?php echo $this->tpl_vars["var"]["add_times"];?></td>
+            <!--<td align="center"><?php echo $this->tpl_vars["var"]["client_version"];?></td>-->
+			<td align="center">
+				<?php if($this->tpl_vars['response_data']['edit_flag'] == true): ?>
+                    <a href="index.php?m=<?php echo $this->tpl_vars["response_data"]["model"];?>&a=edititempage&item_id=<?php echo $this->tpl_vars["var"]["product_id"];?>&pid=<?php echo $this->tpl_vars["response_data"]["query_data"]["item_id"];?>&pname=<?php echo $this->tpl_vars["response_data"]["query_data"]["item_name"];?>&gid=<?php echo $this->tpl_vars["response_data"]["query_data"]["item_game_id"];?>&page=<?php echo $this->tpl_vars["response_data"]["page"];?>&ptype=<?php echo $this->tpl_vars["response_data"]["query_data"]["item_type"];?>&quest_from=1">
+                        <!-- <img src="html/images/button_xg.gif" />-->
+                        <span class="c_green">修改</span>
+                    </a>
+                    <a href="index.php?m=<?php echo $this->tpl_vars["response_data"]["model"];?>&a=addmbitempage&item_id=<?php echo $this->tpl_vars["var"]["product_id"];?>&pname=<?php echo urlencode($this->tpl_vars["var"]["name"]);?>&discount=<?php echo $this->tpl_vars["var"]["org_discount"];?>&start=<?php echo $this->tpl_vars["var"]["start"];?>&end=<?php echo $this->tpl_vars["var"]["end"];?>&price=<?php echo $this->tpl_vars["var"]["price"];?>&category=<?php echo $this->tpl_vars["var"]["category"];?>&base=<?php echo $this->tpl_vars["var"]["base"];?>&gift=<?php echo $this->tpl_vars["var"]["gift"];?>&j_flag=copy">
+                        <!-- <img src="html/images/button_xg.gif" />-->
+                        <span class="c_green">复制</span>
+                    </a>
+				<?php else: ?>
+				-
+				<?php endif;?>
+				<a href="index.php?m=<?php echo $this->tpl_vars["response_data"]["model"];?>&a=trade&subject=<?php echo $this->tpl_vars["var"]["product_id"];?>">
+					<span class="c_green">购买</span>
+				</a>
+
+			</td>
+		</tr>
+	<?php endforeach; endif;?>
+	<tr>
+		<td valign="middle" colspan="13" align="center">
+			<table class="page_bar">
+				<tr>
+					<td><?php echo htmlspecialchars_decode($this->tpl_vars["response_data"]["page_bar"]);?></td>
+					<td><?php echo htmlspecialchars_decode($this->tpl_vars["response_data"]["goto_bar"]);?></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

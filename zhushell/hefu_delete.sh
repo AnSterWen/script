@@ -1,0 +1,3 @@
+#!/bin/bash
+table_name=$1
+mysql -uroot -ptianmenghuangmin RU -e "delete w from RU.$table_name as w inner join (select a.userid as userid,a.reg_tm as reg_tm,a.zone_id as zone_id from (select * from RU.t_ru_base where lv<=10) a left join RU.t_ru_attribute b on a.userid = b.userid and a.reg_tm = b.reg_tm and a.zone_id = b.zone_id and b.attribute_id = 62 left join RU.t_ru_attribute c on a.userid = c.userid and a.reg_tm = c.reg_tm and a.zone_id = c.zone_id and c.attribute_id = 1250001 where b.attribute_value is null and (c.attribute_value<(unix_timestamp() - 24*3600*30))) y on w.reg_tm = y.reg_tm and w.userid = y.userid and w.zone_id = y.zone_id "

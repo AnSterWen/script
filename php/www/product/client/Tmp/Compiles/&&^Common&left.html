@@ -1,0 +1,24 @@
+<div id="LeftMenu">
+  <ul>
+  	<?php if(!empty($this->tpl_vars['response_data']['item_tree'] )): 
+ foreach ($this->tpl_vars['response_data']['item_tree'] as  $this->tpl_vars['key']=>$this->tpl_vars['var']): ?>
+  	<li style="cursor:pointer" id="li_img_<?php echo $this->tpl_vars["key"];?>">
+ 		<h2 id="li_title_<?php echo $this->tpl_vars["key"];?>" style="cursor:pointer" onclick="showList('<?php echo $this->tpl_vars["key"];?>')"><?php echo $this->tpl_vars["var"]["title"];?></h2>   
+ 		<ul id="li_child_<?php echo $this->tpl_vars["key"];?>">
+ 			<?php if(!empty($this->tpl_vars['var']['list'] )): 
+ foreach ($this->tpl_vars['var']['list'] as  $this->tpl_vars['sub_key']=>$this->tpl_vars['sub_var']): ?>
+ 			<li>
+				<?php if($this->tpl_vars['response_data']['color_flag'] == $this->tpl_vars['sub_var']): ?>
+                	<a id="<?php echo $this->tpl_vars["sub_var"];?>" name="left_a" style="color:#390" href="javascript:loadMainRight('<?php echo $this->tpl_vars["sub_var"];?>');"><?php echo $this->tpl_vars["sub_key"];?>	</a>
+				<?php else: ?>
+					<a id="<?php echo $this->tpl_vars["sub_var"];?>" name="left_a" style="color:#666" href="javascript:loadMainRight('<?php echo $this->tpl_vars["sub_var"];?>');"><?php echo $this->tpl_vars["sub_key"];?></a>
+				<?php endif;?>
+			</li>
+ 			<?php endforeach; endif;?>
+ 		</ul>
+  	</li>
+  	<?php endforeach; endif;?>
+  	<input type="hidden" id="last_highlight" name="last_highlight" value="<?php echo $this->tpl_vars["response_data"]["color_flag"];?>" />  
+  </ul>
+</div>
+<img src="html/images/ge.gif" width="120" height="1" />

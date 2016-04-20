@@ -1,0 +1,553 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ACCOUNT_ACCESS_TOKE_PRIVATE_KEY	config/status.config.php	/^define('ACCOUNT_ACCESS_TOKE_PRIVATE_KEY','816a22241aa666e029cefdf61fd297c8');$/;"	d
+ACCOUNT_DEFAULT_KEY	config/common.config.php	/^define('ACCOUNT_DEFAULT_KEY', 'a09fbc85b88f4090ec91695245ca9dc4');$/;"	d
+ACCOUNT_ERR_EMAIL_USED	config/status.config.php	/^define('ACCOUNT_ERR_EMAIL_USED', 11002);\/\/Email已经被使用过$/;"	d
+ACCOUNT_ERR_FORBIDDEN_IP	config/status.config.php	/^define('ACCOUNT_ERR_FORBIDDEN_IP',      10003); \/\/IP被限制$/;"	d
+ACCOUNT_ERR_INVALID_ACTION	config/status.config.php	/^define ('ACCOUNT_ERR_INVALID_ACTION',   10006); \/\/无效的action值$/;"	d
+ACCOUNT_ERR_INVALID_CHANNEL	config/status.config.php	/^define ('ACCOUNT_ERR_INVALID_CHANNEL',  10008); \/\/无效的channel值$/;"	d
+ACCOUNT_ERR_INVALID_EMAIL	config/status.config.php	/^define ('ACCOUNT_ERR_INVALID_EMAIL',    10009); \/\/邮箱格式错误$/;"	d
+ACCOUNT_ERR_INVALID_NAME	config/status.config.php	/^define ('ACCOUNT_ERR_INVALID_NAME',     10010); \/\/账号名格式错误$/;"	d
+ACCOUNT_ERR_INVALID_PARAMS	config/status.config.php	/^define ('ACCOUNT_ERR_INVALID_PARAMS',   10005); \/\/无效的参数$/;"	d
+ACCOUNT_ERR_INVALID_PASSWD	config/status.config.php	/^define ('ACCOUNT_ERR_INVALID_PASSWD',   10011); \/\/账号密码格式错误$/;"	d
+ACCOUNT_ERR_INVALID_SERVICE	config/status.config.php	/^define ('ACCOUNT_ERR_INVALID_SERVICE',  10007); \/\/无效的service值$/;"	d
+ACCOUNT_ERR_INVALID_SIGN	config/status.config.php	/^define ('ACCOUNT_ERR_INVALID_SIGN',     10004); \/\/签名无效$/;"	d
+ACCOUNT_ERR_NAME_EMAIL	config/status.config.php	/^define('ACCOUNT_ERR_NAME_EMAIL',    12004); \/\/账号与绑定email不一致$/;"	d
+ACCOUNT_ERR_NAME_USED	config/status.config.php	/^define('ACCOUNT_ERR_NAME_USED', 11001); \/\/账号名已经使用过$/;"	d
+ACCOUNT_ERR_OK	config/status.config.php	/^define ('ACCOUNT_ERR_OK',                   0); \/\/处理成功$/;"	d
+ACCOUNT_ERR_SESSION_EXPIRE	config/status.config.php	/^define('ACCOUNT_ERR_SESSION_EXPIRE',    13002); \/\/session已过期$/;"	d
+ACCOUNT_ERR_SESSION_NOTEXIST	config/status.config.php	/^define('ACCOUNT_ERR_SESSION_NOTEXIST',  13001); \/\/session不存在$/;"	d
+ACCOUNT_ERR_SESSION_WRONG_USER	config/status.config.php	/^define('ACCOUNT_ERR_SESSION_WRONG_USER',13003); \/\/session与用户ID不匹配$/;"	d
+ACCOUNT_ERR_SYS_BUSY	config/status.config.php	/^define ('ACCOUNT_ERR_SYS_BUSY',         10002); \/\/系统繁忙$/;"	d
+ACCOUNT_ERR_SYS_ERR	config/status.config.php	/^define ('ACCOUNT_ERR_SYS_ERR',          10001); \/\/系统处理错误$/;"	d
+ACCOUNT_ERR_USERID_NOTEXIST	config/status.config.php	/^define('ACCOUNT_ERR_USERID_NOTEXIST', 12005); \/\/账号ID不存在$/;"	d
+ACCOUNT_ERR_USER_FROZEN	config/status.config.php	/^define('ACCOUNT_ERR_USER_FROZEN',   12003); \/\/账号被冻结$/;"	d
+ACCOUNT_ERR_WRONG_NAME	config/status.config.php	/^define('ACCOUNT_ERR_WRONG_NAME',    12001); \/\/账号名不存在$/;"	d
+ACCOUNT_ERR_WRONG_PASSWD	config/status.config.php	/^define('ACCOUNT_ERR_WRONG_PASSWD',  12002); \/\/密码错误$/;"	d
+ACCOUNT_FONT_COMPLEX	config/status.config.php	/^define('ACCOUNT_FONT_COMPLEX',      2);\/\/繁体$/;"	d
+ACCOUNT_FONT_ENGLISH	config/status.config.php	/^define('ACCOUNT_FONT_ENGLISH',      3);\/\/英文$/;"	d
+ACCOUNT_FONT_SIMPLIFIED	config/status.config.php	/^define('ACCOUNT_FONT_SIMPLIFIED',   1);\/\/简体$/;"	d
+ACCOUNT_KEY_TYPE_EMAIL	config/status.config.php	/^define('ACCOUNT_KEY_TYPE_EMAIL', 2);$/;"	d
+ACCOUNT_KEY_TYPE_NAME	config/status.config.php	/^define('ACCOUNT_KEY_TYPE_NAME', 1);$/;"	d
+ACCOUNT_KEY_TYPE_UDID	config/status.config.php	/^define('ACCOUNT_KEY_TYPE_UDID', 3);$/;"	d
+ACCOUNT_MAX_USER_COUNT	tool/userid_generate.php	/^define("ACCOUNT_MAX_USER_COUNT", 1000000);$/;"	d
+ACCOUNT_PROTO_CHECK_NAME_EMAIL	config/status.config.php	/^define('ACCOUNT_PROTO_CHECK_NAME_EMAIL',10003); \/\/验证账号绑定邮箱是否一致$/;"	d
+ACCOUNT_PROTO_CHECK_SESSION	config/status.config.php	/^define('ACCOUNT_PROTO_CHECK_SESSION',   10005); \/\/session验证协议$/;"	d
+ACCOUNT_PROTO_LOGIN	config/status.config.php	/^define('ACCOUNT_PROTO_LOGIN',           10002); \/\/账号验证协议$/;"	d
+ACCOUNT_PROTO_MAX_VALUE	config/status.config.php	/^define('ACCOUNT_PROTO_MAX_VALUE',       10006); \/\/协议号最大值$/;"	d
+ACCOUNT_PROTO_MIN_VALUE	config/status.config.php	/^define('ACCOUNT_PROTO_MIN_VALUE',       10001); \/\/协议号最小值$/;"	d
+ACCOUNT_PROTO_MODIFY_PASSWORD_BY_OLD	config/status.config.php	/^define('ACCOUNT_PROTO_MODIFY_PASSWORD_BY_OLD', 10006); \/\/ 原密码修改密码$/;"	d
+ACCOUNT_PROTO_REGISTER	config/status.config.php	/^define('ACCOUNT_PROTO_REGISTER',        10001); \/\/账号注册协议$/;"	d
+ACCOUNT_PROTO_RESET_PASSWORD	config/status.config.php	/^define('ACCOUNT_PROTO_RESET_PASSWORD',  10004); \/\/重置密码协议$/;"	d
+ACCOUNT_SESSION_VALID_TIME	config/status.config.php	/^define('ACCOUNT_SESSION_VALID_TIME', 3600);$/;"	d
+DEBUG_LEVEL	lib/Log.class.php	/^define("DEBUG_LEVEL", 5);$/;"	d
+DEBUG_PREFIX	lib/Log.class.php	/^define("DEBUG_PREFIX", "debug");$/;"	d
+DEF_APPENDIX_LEN	lib/Log.class.php	/^define("DEF_APPENDIX_LEN", 3); \/\/ 默认每天同级别日志文件最多可以有1000个$/;"	d
+DEF_DIR	lib/Log.class.php	/^define("DEF_DIR", ".\/log\/");  \/\/ 默认将日志文件写在当前目录$/;"	d
+DEF_FILE_PREFIX	lib/Log.class.php	/^define("DEF_FILE_PREFIX", "");$/;"	d
+DEF_LEVEL	lib/Log.class.php	/^define("DEF_LEVEL", TRACE_LEVEL);$/;"	d
+DEF_MAX_SIZE	lib/Log.class.php	/^define("DEF_MAX_SIZE", 30*1024*1024);	\/\/ 30MB$/;"	d
+ERROR_LEVEL	lib/Log.class.php	/^define("ERROR_LEVEL", 2);$/;"	d
+ERROR_PREFIX	lib/Log.class.php	/^define("ERROR_PREFIX", "error");$/;"	d
+ErrorMsg	lib/Mysql.class.php	/^    public function ErrorMsg($message = '')$/;"	f
+FATAL_LEVEL	lib/Log.class.php	/^define("FATAL_LEVEL", 1);$/;"	d
+FATAL_PREFIX	lib/Log.class.php	/^define("FATAL_PREFIX", "fatal");$/;"	d
+INFO_LEVEL	lib/Log.class.php	/^define("INFO_LEVEL",  4);$/;"	d
+INFO_PREFIX	lib/Log.class.php	/^define("INFO_PREFIX",  "info");$/;"	d
+LOG_DIR	config/common.config.php	/^define('LOG_DIR', dirname(dirname(__FILE__)) . '\/log\/');$/;"	d
+LOG_PREFIX	config/common.config.php	/^define('LOG_PREFIX', "account_service_");$/;"	d
+Log	lib/Log.class.php	/^class Log$/;"	c
+Mysql	lib/Mysql.class.php	/^class Mysql {   $/;"	c
+TRACE_LEVEL	lib/Log.class.php	/^define("TRACE_LEVEL", 6);$/;"	d
+TRACE_PREFIX	lib/Log.class.php	/^define("TRACE_PREFIX", "trace");$/;"	d
+WARN_LEVEL	lib/Log.class.php	/^define("WARN_LEVEL",  3);$/;"	d
+WARN_PREFIX	lib/Log.class.php	/^define("WARN_PREFIX",  "warn");$/;"	d
+__construct	lib/Log.class.php	/^	function __construct($file_prefix = DEF_FILE_PREFIX, $directory = DEF_DIR, $level = DEF_LEVEL, $file_appendix_len = DEF_APPENDIX_LEN , $max_size = DEF_MAX_SIZE)$/;"	f
+__construct	lib/Mysql.class.php	/^    public function __construct()$/;"	f
+__construct	model/account_bind_email.class.php	/^    function __construct($channel_id, $user_name, $user_email)$/;"	f
+__construct	model/account_modify_password_by_old.class.php	/^    function __construct($channel_id, $user_name, $old_passwd, $new_passwd)$/;"	f
+__construct	model/account_reset_passwd.class.php	/^    function __construct($channel_id, $user_name, $user_email, $new_passwd)$/;"	f
+__construct	model/account_session.class.php	/^    function __construct($user_id, $session)$/;"	f
+__construct	model/account_verfiy.class.php	/^    function __construct($channel_id, $user_name, $user_passwd)$/;"	f
+__construct	model/register.class.php	/^    function __construct($channel_id, $user_name, $user_passwd, $user_email)$/;"	f
+__construct	model/userid.gen.class.php	/^    function __construct($channel_id, $channel_name, $security_code, $user_count)$/;"	f
+__destruct	lib/Log.class.php	/^	function __destruct()$/;"	f
+__destruct	model/account_bind_email.class.php	/^    function __destruct()$/;"	f
+__destruct	model/account_modify_password_by_old.class.php	/^    function __destruct()$/;"	f
+__destruct	model/account_reset_passwd.class.php	/^    function __destruct()$/;"	f
+__destruct	model/account_session.class.php	/^    function __destruct()$/;"	f
+__destruct	model/account_verfiy.class.php	/^    function __destruct()$/;"	f
+__destruct	model/register.class.php	/^    function __destruct()$/;"	f
+__destruct	model/userid.gen.class.php	/^    function __destruct()$/;"	f
+a_ip	lib/functions.php	/^    $a_ip = unpack('Nip', pack('L', $i_ip)) ;$/;"	v
+a_result	lib/functions.php	/^    $a_result = get_url_contents($s_url, $data, 'get', 'json');$/;"	v
+a_update	lib/Mysql.class.php	/^        $a_update = array ();$/;"	v
+account_check_name_email	account_service.php	/^function account_check_name_email()$/;"	f
+account_check_session	account_service.php	/^function account_check_session()$/;"	f
+account_login_verify	account_service.php	/^function account_login_verify()$/;"	f
+account_modify_password_by_old	account_service.php	/^function account_modify_password_by_old()$/;"	f
+account_register	account_service.php	/^function account_register()$/;"	f
+account_reset_password	account_service.php	/^function account_reset_password()$/;"	f
+arg	lib/functions.php	/^    $arg = array();$/;"	v
+arr	lib/Mysql.class.php	/^            $arr = array ();$/;"	v
+begin	lib/Mysql.class.php	/^    public function begin()$/;"	f
+bin_str	lib/functions.php	/^\/\/    $bin_str = '';$/;"	v
+c_account_bind_email	model/account_bind_email.class.php	/^class c_account_bind_email {$/;"	c
+c_account_modify_password_by_old	model/account_modify_password_by_old.class.php	/^class c_account_modify_password_by_old$/;"	c
+c_account_register	model/register.class.php	/^class c_account_register {$/;"	c
+c_account_reset_passwd	model/account_reset_passwd.class.php	/^class c_account_reset_passwd {$/;"	c
+c_account_session	model/account_session.class.php	/^class c_account_session {$/;"	c
+c_account_verify	model/account_verfiy.class.php	/^class c_account_verify {$/;"	c
+c_userid_generator	model/userid.gen.class.php	/^class c_userid_generator {$/;"	c
+cal_sign	lib/functions.php	/^        $cal_sign = make_md5_sign($_REQUEST);$/;"	v
+ch	lib/functions.php	/^        $ch = curl_init();$/;"	v
+channel	lib/functions.php	/^    $channel = intval($params['channel']);$/;"	v
+channel_id	account_service.php	/^    $channel_id = $_REQUEST['channel'];$/;"	v
+channel_id	tool/userid_generate.php	/^$channel_id = $argv[1];$/;"	v
+channel_name	tool/userid_generate.php	/^$channel_name = "";$/;"	v
+check_account_bind_email	model/account_bind_email.class.php	/^    function check_account_bind_email()$/;"	f
+check_account_password	model/account_verfiy.class.php	/^    function check_account_password()$/;"	f
+check_email	lib/functions.php	/^function check_email($email)$/;"	f
+check_ip	lib/web.utils.php	/^function check_ip($allowed_ips, $checked_ip)$/;"	f
+check_params	model/account_bind_email.class.php	/^    private function check_params()$/;"	f
+check_params	model/account_modify_password_by_old.class.php	/^    private function check_params()$/;"	f
+check_params	model/account_reset_passwd.class.php	/^    private function check_params()$/;"	f
+check_params	model/account_session.class.php	/^    private function check_params()$/;"	f
+check_params	model/account_verfiy.class.php	/^    private function check_params()$/;"	f
+check_params	model/register.class.php	/^    private function check_params()$/;"	f
+check_params	model/userid.gen.class.php	/^    private function check_params()$/;"	f
+check_session	model/account_session.class.php	/^    function check_session()$/;"	f
+check_sign	lib/functions.php	/^function check_sign()$/;"	f
+check_user_name	lib/functions.php	/^function check_user_name($user_name)$/;"	f
+client_ip	account_service.php	/^$client_ip = get_client_ip();$/;"	v
+client_ip	model/account_bind_email.class.php	/^        $client_ip = get_client_ip();$/;"	v
+client_ip	model/account_modify_password_by_old.class.php	/^        $client_ip = get_client_ip();$/;"	v
+client_ip	model/account_reset_passwd.class.php	/^        $client_ip = get_client_ip();$/;"	v
+client_ip	model/account_session.class.php	/^        $client_ip = get_client_ip();$/;"	v
+client_ip	model/account_verfiy.class.php	/^        $client_ip = get_client_ip();$/;"	v
+client_ip	model/register.class.php	/^        $client_ip = get_client_ip();$/;"	v
+close	lib/Mysql.class.php	/^    public function close()$/;"	f
+cnt_row	model/common.db.model.php	/^        $cnt_row = $g_db_conn->selectOne($sql);$/;"	v
+commit	lib/Mysql.class.php	/^    public function commit()$/;"	f
+conn_result	model/common.db.model.php	/^    $conn_result = $g_db_conn->connect($db_config['db_host'] . ":" . $db_config['db_port'], $/;"	v
+connect	lib/Mysql.class.php	/^    public function connect($dbhost, $dbuser, $dbpwd, $dbname = '', $dbcharset = 'utf8', $pconnect = 0)$/;"	f
+content	lib/Log.class.php	/^		$content = $now.$message."\\n";$/;"	v
+content	lib/web.utils.php	/^        $content = '';$/;"	v
+current_date	lib/Log.class.php	/^		$current_date = strftime("%Y%m%d");	\/\/format:yyyymmdd$/;"	v
+data	lib/functions.php	/^            $data = is_array($data) ? http_build_query($data) : $data ;$/;"	v
+data	lib/functions.php	/^    $data = array($/;"	v
+date	model/account_verfiy.class.php	/^        $date = date("YmdHis");$/;"	v
+db_check_user_email	model/common.db.model.php	/^function db_check_user_email($channel_id, $user_id, $user_name, $user_email, $client_ip)$/;"	f
+db_check_user_passwd	model/common.db.model.php	/^function db_check_user_passwd($channel_id, $user_id, $user_name, $password, $client_ip)$/;"	f
+db_check_user_session	model/common.db.model.php	/^function db_check_user_session($user_id, $session)$/;"	f
+db_finish	model/common.db.model.php	/^function db_finish()$/;"	f
+db_generate_session	model/common.db.model.php	/^function db_generate_session($user_id, $session, $client_ip)$/;"	f
+db_generate_userid	model/common.db.model.php	/^function db_generate_userid($channel_id, $gen_count)$/;"	f
+db_get_a_userid	model/common.db.model.php	/^function db_get_a_userid($channel_id)$/;"	f
+db_get_channel_userid_remain_count	model/common.db.model.php	/^function db_get_channel_userid_remain_count($channel_id)$/;"	f
+db_get_key_userid	model/common.db.model.php	/^function db_get_key_userid($key, $key_type, $channel_id)$/;"	f
+db_get_max_userid	model/common.db.model.php	/^function db_get_max_userid()$/;"	f
+db_init	model/common.db.model.php	/^function db_init($db_config)$/;"	f
+db_insert_userid_key	model/common.db.model.php	/^function db_insert_userid_key($key, $key_type, $channel_id, $user_id)$/;"	f
+db_modify_user_passwd_by_old	model/common.db.model.php	/^function db_modify_user_passwd_by_old($channel_id, $user_id, $user_name, $old_passwd, $new_passwd, $client_ip)$/;"	f
+db_register_userid	model/common.db.model.php	/^function db_register_userid($channel_id, $user_name, $password, $email, $client_ip)$/;"	f
+db_reset_user_passwd	model/common.db.model.php	/^function db_reset_user_passwd($channel_id, $user_id, $user_name, $user_email, $new_pasword, $client_ip)$/;"	f
+dbname	lib/Mysql.class.php	/^    public function connect($dbhost, $dbuser, $dbpwd, $dbname = '', $dbcharset = 'utf8', $pconnect = 0)$/;"	v
+dead_time	model/common.db.model.php	/^    $dead_time = date("Y-m-d H:i:s", $now + ACCOUNT_SESSION_VALID_TIME);$/;"	v
+dead_time	model/common.db.model.php	/^    $dead_time = strtotime($row['dead_time']);$/;"	v
+debug	lib/Log.class.php	/^	public function debug($message)$/;"	f
+debug	lib/Mysql.class.php	/^    private $debug = false;     \/\/true 打开数据库调试模式 false关闭数据库调试模式$/;"	v
+default_timezone	lib/functions.php	/^    $default_timezone = date_default_timezone_get();$/;"	v
+delete	lib/Mysql.class.php	/^    public function delete($table, $where = '')$/;"	f
+dest_passwd	model/common.db.model.php	/^    $dest_passwd = md5($reverse_string, true);$/;"	v
+directory	lib/Log.class.php	/^	function __construct($file_prefix = DEF_FILE_PREFIX, $directory = DEF_DIR, $level = DEF_LEVEL, $file_appendix_len = DEF_APPENDIX_LEN , $max_size = DEF_MAX_SIZE)$/;"	v
+end_uid	model/common.db.model.php	/^        $end_uid = $row['end_uid'];$/;"	v
+end_uid	model/common.db.model.php	/^    $end_uid = $max_uid + $real_gen_count;$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'EMAIL HAS BEEN USED';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'Email已經被使用過';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'Email已经被使用过';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'FORBIDDEN IP';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'INVALID ACTION';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'INVALID CHANNEL';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'INVALID EMAIL';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'INVALID NAME';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'INVALID PARAMS';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'INVALID PASSWD';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'INVALID SERVICE';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'INVALID SIGN';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'IP被限制';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'NAME HAS BEEN USED';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'NAME NOT EXIST';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'SESSION EXPIRED';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'SESSION NOT EXIST';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'SUCCESS';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'SYSTEM BUSY';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'SYSTEM ERROR';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'UNKOWN ERROR';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'USER FROZEN';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'USERID NOT EXIST';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'WRONG EMAIL';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'WRONG PASSWORD';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'WRONG SESSION';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'session不存在';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'session与用户ID不匹配';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'session已过期';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'session已過期';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = 'session與用戶ID不匹配';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '参数无效';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '參數無效';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '密码格式错误';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '密码错误';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '密碼格式錯誤';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '密碼錯誤';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '帳號ID不存在';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '帳號名不存在';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '帳號名已經使用過';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '帳號名格式錯誤';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '帳號未啟動';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '帳號與綁定Email不一致';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '无效的action值';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '无效的channel值';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '无效的service值';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '無效的action值';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '無效的channel值';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '無效的service值';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '签名无效';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '簽名無效';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '系統繁忙';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '系統錯誤';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '系统处理错误';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '系统繁忙';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '账号ID不存在';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '账号与绑定Email不一致';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '账号名不存在';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '账号名已经使用过';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '账号名格式错误';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '账号未激活';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '邮箱格式错误';$/;"	v
+err_desc	config/status.config.php	/^        $err_desc = '郵箱格式錯誤';$/;"	v
+err_desc	config/status.config.php	/^    $err_desc = '';$/;"	v
+errno	lib/web.utils.php	/^	$errno      = "";$/;"	v
+error	lib/Log.class.php	/^	public function error($message)$/;"	f
+errstr	lib/web.utils.php	/^	$errstr     = "";$/;"	v
+fatal	lib/Log.class.php	/^	public function fatal($message)$/;"	f
+field_names	lib/Mysql.class.php	/^        $field_names = $this->getColumn ( 'DESC ' . $table );$/;"	v
+field_names	lib/Mysql.class.php	/^        $field_names = $this->getColumn('DESC '.$table);$/;"	v
+fields	lib/Mysql.class.php	/^        $fields = array ();$/;"	v
+file	lib/Log.class.php	/^				$file = fopen("$test_name",'x');$/;"	v
+file	lib/Log.class.php	/^			$file = @fopen("$test_name","r");$/;"	v
+file	lib/functions.php	/^    $file = basename($file);$/;"	v
+file_level_prefix	lib/Log.class.php	/^		$file_level_prefix = $this->get_log_level_prefix($level);$/;"	v
+file_name	lib/Log.class.php	/^					$file_name = $test_name;$/;"	v
+file_name	lib/Log.class.php	/^		$file_name = $this->directory.$this->file_prefix.$file_level_prefix.$current_date;$/;"	v
+file_name	lib/Log.class.php	/^		$file_name = $this->get_file_name($level);$/;"	v
+flag	lib/functions.php	/^    $flag = 0;$/;"	v
+flag0	lib/functions.php	/^    $flag0 = 0;$/;"	v
+fp	lib/web.utils.php	/^	$fp=@fsockopen($transports . $urlarr['host'],$urlarr['port'],$errno,$errstr,$time_out);$/;"	v
+g_allow_channels	config/common.config.php	/^$g_allow_channels = array($/;"	v
+g_db_config	config/common.config.php	/^    $g_db_config = array($/;"	v
+g_db_config	config/common.config.php	/^$g_db_config = array();$/;"	v
+g_db_conn	model/common.db.model.php	/^    $g_db_conn = new Mysql();$/;"	v
+g_db_conn	model/common.db.model.php	/^$g_db_conn = false;$/;"	v
+g_logger	account_service.php	/^$g_logger = new Log("account_service_", LOG_DIR);$/;"	v
+g_logger	lib/functions.php	/^$g_logger = false;$/;"	v
+g_logger	model/account_bind_email.class.php	/^        $g_logger = new Log("account_name_eamil_", LOG_DIR);$/;"	v
+g_logger	model/account_modify_password_by_old.class.php	/^        $g_logger = new Log("account_modify_password_by_old_", LOG_DIR);$/;"	v
+g_logger	model/account_reset_passwd.class.php	/^        $g_logger = new Log("account_reset_password_", LOG_DIR);$/;"	v
+g_logger	model/account_session.class.php	/^        $g_logger = new Log("account_check_session_", LOG_DIR);$/;"	v
+g_logger	model/account_verfiy.class.php	/^        $g_logger = new Log("account_login_", LOG_DIR);$/;"	v
+g_logger	model/register.class.php	/^        $g_logger = new Log("account_register_", LOG_DIR);$/;"	v
+g_logger	tool/userid_generate.php	/^$g_logger = new Log("account_userid_gen_", LOG_DIR);$/;"	v
+g_proxy_conf	config/common.config.php	/^    \/\/ $g_proxy_conf = array($/;"	v
+g_proxy_conf	config/common.config.php	/^\/\/ $g_proxy_conf = array();$/;"	v
+g_version	config/common.config.php	/^$g_version = "release";$/;"	v
+g_version	config/common.config.php	/^\/\/ $g_version = "debug";$/;"	v
+gen_handler	tool/userid_generate.php	/^$gen_handler = new c_userid_generator($channel_id, $channel_name, $security_code, $user_count);$/;"	v
+generate_salt_passwd	model/common.db.model.php	/^function generate_salt_passwd($salt, $password, $md5_count = 1)$/;"	f
+getColumn	lib/Mysql.class.php	/^    public function getColumn($sql)$/;"	f
+getLastInsertId	lib/Mysql.class.php	/^    public function getLastInsertId()$/;"	f
+getOneField	lib/Mysql.class.php	/^    public function getOneField($sql)$/;"	f
+getRowsNum	lib/Mysql.class.php	/^    public function getRowsNum($sql)$/;"	f
+getVersion	lib/Mysql.class.php	/^    public function getVersion()$/;"	f
+get_access_token	model/account_verfiy.class.php	/^    function get_access_token()$/;"	f
+get_account_complex_error_description	config/status.config.php	/^function get_account_complex_error_description($err_code)$/;"	f
+get_account_english_error_description	config/status.config.php	/^function get_account_english_error_description($err_code)$/;"	f
+get_account_error_description	config/status.config.php	/^function get_account_error_description($err_code, $language = 1)$/;"	f
+get_account_simple_error_description	config/status.config.php	/^function get_account_simple_error_description($err_code)$/;"	f
+get_channel_key	lib/functions.php	/^function get_channel_key($channel)$/;"	f
+get_client_ip	lib/functions.php	/^function get_client_ip ( $is_long = FALSE )$/;"	f
+get_file_name	lib/Log.class.php	/^	private function get_file_name($level)$/;"	f
+get_hash_key	model/common.db.model.php	/^function get_hash_key($key)$/;"	f
+get_http_response	lib/web.utils.php	/^function get_http_response($url, $input_charset = '', $time_out = "60")$/;"	f
+get_internal_key	lib/functions.php	/^function get_internal_key($channel)$/;"	f
+get_internal_verifyid	lib/functions.php	/^function get_internal_verifyid($channel)$/;"	f
+get_log_level	lib/Log.class.php	/^	public function get_log_level()$/;"	f
+get_log_level_prefix	lib/Log.class.php	/^	public function get_log_level_prefix($level)$/;"	f
+get_url_contents	lib/functions.php	/^    function get_url_contents($url, $data, $method="get", $data_type='var_export', $timeout=60)$/;"	f
+get_user_id	model/account_bind_email.class.php	/^    function get_user_id()$/;"	f
+get_user_id	model/account_modify_password_by_old.class.php	/^    function get_user_id()$/;"	f
+get_user_id	model/account_reset_passwd.class.php	/^    function get_user_id()$/;"	f
+get_user_id	model/account_verfiy.class.php	/^    function get_user_id()$/;"	f
+get_user_id	model/register.class.php	/^    function get_user_id()$/;"	f
+get_userid_range	model/userid.gen.class.php	/^    function get_userid_range()$/;"	f
+gmtime	lib/functions.php	/^function gmtime()$/;"	f
+handler	account_service.php	/^    $handler = new c_account_modify_password_by_old($channel_id, $user_name, $old_passwd, $new_passwd);$/;"	v
+hash_key	model/common.db.model.php	/^        $hash_key = $hash_key & 0xFFFFFFFF;$/;"	v
+hash_key	model/common.db.model.php	/^    $hash_key = 0;$/;"	v
+hash_key	model/common.db.model.php	/^    $hash_key = get_hash_key($key);$/;"	v
+high	lib/functions.php	/^\/\/        $high = hexdec($hex_str[$i]);$/;"	v
+hlen	lib/functions.php	/^    $hlen = 24;$/;"	v
+i	lib/functions.php	/^    $i = 0;$/;"	v
+i_ip	lib/functions.php	/^    $i_ip = is_string($m_ip) ? ip2long($m_ip) : $m_ip ;$/;"	v
+i_match	lib/functions.php	/^    $i_match = preg_match("\/^[a-z0-9][a-z0-9\\._-]{2,}@([a-z0-9]+([a-z0-9-]*[a-z0-9])*\\.)+[a-z]+$\/", $email);$/;"	v
+i_match	lib/functions.php	/^    $i_match = preg_match("\/^\\w+$\/", $user_name);$/;"	v
+ifields	lib/Mysql.class.php	/^        $ifields = array ();$/;"	v
+info	lib/Log.class.php	/^	public function info($message)$/;"	f
+input_charset	lib/web.utils.php	/^function get_http_response($url, $input_charset = '', $time_out = "60")$/;"	v
+insert	lib/Mysql.class.php	/^    public function insert($table, $field_values)$/;"	f
+insert_fields	model/common.db.model.php	/^        $insert_fields = array($/;"	v
+insert_fields	model/common.db.model.php	/^    $insert_fields = array($/;"	v
+insert_sentence_update	lib/Mysql.class.php	/^    public function insert_sentence_update($table, $insert_fields, $update_sql)$/;"	f
+insert_update	lib/Mysql.class.php	/^    public function insert_update($table, $insert_fields, $update_fields)$/;"	f
+ip	lib/functions.php	/^        $ip = "Unknown";$/;"	v
+ip	lib/functions.php	/^        $ip = $HTTP_SERVER_VARS["HTTP_CLIENT_IP"];$/;"	v
+ip	lib/functions.php	/^        $ip = $HTTP_SERVER_VARS["HTTP_X_FORWARDED_FOR"];$/;"	v
+ip	lib/functions.php	/^        $ip = $HTTP_SERVER_VARS["REMOTE_ADDR"];$/;"	v
+ip	lib/functions.php	/^        $ip = getenv("HTTP_CLIENT_IP");$/;"	v
+ip	lib/functions.php	/^        $ip = getenv("HTTP_X_FORWARDED_FOR");$/;"	v
+ip	lib/functions.php	/^        $ip = getenv("REMOTE_ADDR");$/;"	v
+ip	lib/functions.php	/^        $ip = ip2netlong($ip);$/;"	v
+ip	lib/functions.php	/^        $ip = substr($ip, $i);$/;"	v
+ip2netlong	lib/functions.php	/^function ip2netlong($m_ip)$/;"	f
+is_long	lib/functions.php	/^function get_client_ip ( $is_long = FALSE )$/;"	v
+is_succ	model/common.db.model.php	/^            $is_succ = false;$/;"	v
+is_succ	model/common.db.model.php	/^        $is_succ = false;$/;"	v
+is_succ	model/common.db.model.php	/^        $is_succ = true;$/;"	v
+is_succ	model/common.db.model.php	/^    $is_succ = false;$/;"	v
+is_succ	model/common.db.model.php	/^    $is_succ = true;$/;"	v
+ivalues	lib/Mysql.class.php	/^        $ivalues = array ();$/;"	v
+key	lib/Mysql.class.php	/^                foreach( $a_update as $key => $value ) {$/;"	v
+key	lib/functions.php	/^        if ($key == 'sign' || $key == 'sign_type' || $key == 'PHPSESSID' || $key == '__utma' || $key == '__utmz') {$/;"	v
+key	lib/functions.php	/^    $key = get_channel_key($channel);$/;"	v
+key	lib/functions.php	/^    foreach ($arg as $key => $val) {$/;"	v
+key	lib/functions.php	/^    foreach ($params as $key => $val) {$/;"	v
+language	config/status.config.php	/^function get_account_error_description($err_code, $language = 1)$/;"	v
+len	lib/functions.php	/^    $len = 24;$/;"	v
+len	lib/functions.php	/^    $len = strlen($ip);$/;"	v
+len	lib/functions.php	/^\/\/    $len = strlen($hex_str);$/;"	v
+len	model/common.db.model.php	/^    $len = strlen($key);$/;"	v
+link_id	lib/Mysql.class.php	/^    private $link_id = NULL;$/;"	v
+log	lib/Log.class.php	/^	protected  function log($message, $level)$/;"	f
+log_file_fd	lib/functions.php	/^    $log_file_fd = fopen($log_file,"ab");$/;"	v
+log_level_prefix	lib/Log.class.php	/^				$log_level_prefix = DEBUG_PREFIX;$/;"	v
+log_level_prefix	lib/Log.class.php	/^				$log_level_prefix = ERROR_PREFIX;$/;"	v
+log_level_prefix	lib/Log.class.php	/^				$log_level_prefix = FALSE;$/;"	v
+log_level_prefix	lib/Log.class.php	/^				$log_level_prefix = FATAL_PREFIX;$/;"	v
+log_level_prefix	lib/Log.class.php	/^				$log_level_prefix = INFO_PREFIX;$/;"	v
+log_level_prefix	lib/Log.class.php	/^				$log_level_prefix = TRACE_PREFIX;$/;"	v
+log_level_prefix	lib/Log.class.php	/^				$log_level_prefix = WARN_PREFIX;$/;"	v
+log_level_prefix	lib/Log.class.php	/^		$log_level_prefix = FALSE;$/;"	v
+login_handler	account_service.php	/^    $login_handler = new c_account_bind_email($channel_id, $user_name, $user_email);$/;"	v
+login_handler	account_service.php	/^    $login_handler = new c_account_reset_passwd($channel_id, $user_name, $user_email, $new_passwd);$/;"	v
+login_handler	account_service.php	/^    $login_handler = new c_account_verify($channel_id, $user_name, $user_passwd);$/;"	v
+low	lib/functions.php	/^\/\/        $low = hexdec($hex_str[$i + 1]);$/;"	v
+make_md5_sign	lib/functions.php	/^function make_md5_sign($params)$/;"	f
+max_files	lib/Log.class.php	/^		$max_files = pow(10, $this->file_appendix_len);$/;"	v
+max_uid	model/common.db.model.php	/^    $max_uid = db_get_max_userid();$/;"	v
+mb_num	lib/web.utils.php	/^function redirect_to($result, $mb_usage, $user_id, $channel_id, $mb_num=0)$/;"	v
+md5_1	model/common.db.model.php	/^    $md5_1 = $password;$/;"	v
+md5_2	model/common.db.model.php	/^    $md5_2 = strtolower( md5($md5_1) );$/;"	v
+md5_3	model/common.db.model.php	/^    $md5_3 = strtolower( md5($salt1_str) );$/;"	v
+md5_count	model/common.db.model.php	/^function generate_salt_passwd($salt, $password, $md5_count = 1)$/;"	v
+message	lib/Mysql.class.php	/^            $message = @mysql_error ();$/;"	v
+method	lib/functions.php	/^    function get_url_contents($url, $data, $method="get", $data_type='var_export', $timeout=60)$/;"	v
+modify_password_by_old	model/account_modify_password_by_old.class.php	/^    function modify_password_by_old()$/;"	f
+msg	lib/functions.php	/^    $msg = "[$file][$func][$line] $info";$/;"	v
+msglog	lib/functions.php	/^function msglog($log_file, $type, $data_array)$/;"	f
+new_passwd	account_service.php	/^    $new_passwd = $_REQUEST['newpwd'];$/;"	v
+new_salt_pwd	model/common.db.model.php	/^    $new_salt_pwd = generate_salt_passwd($salt, $new_passwd);$/;"	v
+now	lib/Log.class.php	/^		$now = strftime("[%H:%M:%S]");  \/\/ current time,format hh:mm:ss$/;"	v
+now	model/common.db.model.php	/^    $now = time();$/;"	v
+numrows	lib/Mysql.class.php	/^    public function selectLimit($sql, $numrows=-1, $offset=-1)$/;"	v
+old_passwd	account_service.php	/^    $old_passwd = $_REQUEST['oldpwd'];$/;"	v
+old_salt_pwd	model/common.db.model.php	/^    $old_salt_pwd = generate_salt_passwd($salt, $old_passwd);$/;"	v
+output	lib/functions.php	/^        $output = curl_exec($ch);$/;"	v
+output	lib/web.utils.php	/^		$output = var_export($response,TRUE);$/;"	v
+output	lib/web.utils.php	/^		$output ="Unsupported \\$result_format value: ".$result_format;$/;"	v
+output	lib/web.utils.php	/^	$output = "";$/;"	v
+output	lib/web.utils.php	/^        $output = json_encode($response);$/;"	v
+packed_body	lib/functions.php	/^    $packed_body = "";$/;"	v
+packed_data	lib/functions.php	/^    $packed_data = $packed_header . $packed_body;$/;"	v
+packed_header	lib/functions.php	/^    $packed_header = pack("SCCL5",$len,$hlen,$flag0,$flag,$saddr,$seqno,$type,$timestamp);$/;"	v
+pay_type	lib/web.utils.php	/^		$pay_type = "";$/;"	v
+pay_type	lib/web.utils.php	/^	$pay_type = get_pay_type($channel_id);$/;"	v
+process_response	lib/web.utils.php	/^function process_response($response, $result_format)$/;"	f
+query	lib/Mysql.class.php	/^        $query = $this->query ( $sql );$/;"	v
+query	lib/Mysql.class.php	/^    public function query($sql)$/;"	f
+rcv_sign	lib/functions.php	/^    $rcv_sign = $_REQUEST['sign'];$/;"	v
+real_gen_count	model/common.db.model.php	/^    $real_gen_count = $gen_count - $user_count;$/;"	v
+redirect_to	lib/web.utils.php	/^function redirect_to($result, $mb_usage, $user_id, $channel_id, $mb_num=0)$/;"	f
+register_handler	account_service.php	/^    $register_handler = new c_account_register($channel_id, $user_name, $user_passwd, $user_email);$/;"	v
+res	lib/Mysql.class.php	/^        $res = $this->query ( $sql );$/;"	v
+res	lib/Mysql.class.php	/^        $res = $this->query( $sql );$/;"	v
+reset_account_password	model/account_reset_passwd.class.php	/^    function reset_account_password()$/;"	f
+response	account_service.php	/^        $response =  account_check_name_email();$/;"	v
+response	account_service.php	/^        $response =  account_check_session();$/;"	v
+response	account_service.php	/^        $response =  account_login_verify();$/;"	v
+response	account_service.php	/^        $response =  account_modify_password_by_old();$/;"	v
+response	account_service.php	/^        $response =  account_register();$/;"	v
+response	account_service.php	/^        $response =  account_reset_password();$/;"	v
+response	account_service.php	/^        $response = array('status_code' => ACCOUNT_ERR_INVALID_SERVICE);$/;"	v
+response	account_service.php	/^        $response = array('status_code' => ACCOUNT_ERR_INVALID_SIGN);$/;"	v
+response	account_service.php	/^    $response = array('status_code' => ACCOUNT_ERR_SYS_ERR);$/;"	v
+response	account_service.php	/^$response = select_action();$/;"	v
+responseText	lib/web.utils.php	/^		$responseText = trim(stristr($responseText,"\\r\\n\\r\\n"),"\\r\\n");$/;"	v
+responseText	lib/web.utils.php	/^	$responseText = "";$/;"	v
+response_string	account_service.php	/^$response_string = json_encode($response);$/;"	v
+result	account_service.php	/^    $result = $handler->modify_password_by_old();$/;"	v
+result	account_service.php	/^    $result = $login_handler->check_account_bind_email();$/;"	v
+result	account_service.php	/^    $result = $login_handler->check_account_password();$/;"	v
+result	account_service.php	/^    $result = $login_handler->reset_account_password();$/;"	v
+result	account_service.php	/^    $result = $register_handler->start_register();$/;"	v
+result	account_service.php	/^$result = $response['status_code'];$/;"	v
+result	lib/functions.php	/^            $result = '' ;$/;"	v
+result	model/account_bind_email.class.php	/^        $result = $this->check_params();$/;"	v
+result	model/account_modify_password_by_old.class.php	/^        $result = $this->check_params();$/;"	v
+result	model/account_reset_passwd.class.php	/^        $result = $this->check_params();$/;"	v
+result	model/account_session.class.php	/^        $result = $this->check_params();$/;"	v
+result	model/account_session.class.php	/^        $result = db_check_user_session($this->m_user_id, $this->m_session);$/;"	v
+result	model/account_verfiy.class.php	/^        $result = $this->check_params();$/;"	v
+result	model/account_verfiy.class.php	/^        $result = db_check_user_passwd($this->m_channel_id, $user_id, $this->m_user_name,$/;"	v
+result	model/account_verfiy.class.php	/^        $result = db_generate_session($this->m_user_id, $this->m_access_token, $this->m_client_ip);$/;"	v
+result	model/common.db.model.php	/^            $result = db_insert_userid_key($email, ACCOUNT_KEY_TYPE_EMAIL, $channel_id, $user_id);$/;"	v
+result	model/common.db.model.php	/^            $result = db_insert_userid_key($user_name, ACCOUNT_KEY_TYPE_NAME, $channel_id, $user_id);$/;"	v
+result	model/common.db.model.php	/^        $result = $g_db_conn->insert($table_name, $insert_fields);$/;"	v
+result	model/common.db.model.php	/^        $result = $g_db_conn->query($sql);$/;"	v
+result	model/common.db.model.php	/^    $result = $g_db_conn->insert($table_name, $insert_fields);$/;"	v
+result	model/register.class.php	/^        $result = $this->check_params();$/;"	v
+result	model/userid.gen.class.php	/^        $result = $this->check_params();$/;"	v
+result	model/userid.gen.class.php	/^        $result = db_generate_userid($this->m_channel_id, $this->m_user_count);$/;"	v
+result	tool/userid_generate.php	/^$result = $gen_handler->start_generate_userid();$/;"	v
+ret	lib/Log.class.php	/^		$ret = $this->log($message, DEBUG_LEVEL);$/;"	v
+ret	lib/Log.class.php	/^		$ret = $this->log($message, ERROR_LEVEL);$/;"	v
+ret	lib/Log.class.php	/^		$ret = $this->log($message, FATAL_LEVEL);$/;"	v
+ret	lib/Log.class.php	/^		$ret = $this->log($message, INFO_LEVEL);$/;"	v
+ret	lib/Log.class.php	/^		$ret = $this->log($message, TRACE_LEVEL);$/;"	v
+ret	lib/Log.class.php	/^		$ret = $this->log($message, WARN_LEVEL);$/;"	v
+retrun_array	model/common.db.model.php	/^    $retrun_array = array($/;"	v
+reverse_string	model/common.db.model.php	/^    $reverse_string = strrev($salt2_str);$/;"	v
+rollback	lib/Mysql.class.php	/^    public function rollback()$/;"	f
+row	lib/Mysql.class.php	/^                $row = mysql_fetch_assoc ( $res );$/;"	v
+row	lib/Mysql.class.php	/^                $row = mysql_fetch_row ($res);$/;"	v
+row	lib/Mysql.class.php	/^            $row = mysql_fetch_assoc ( $res );$/;"	v
+row	lib/Mysql.class.php	/^            $row = mysql_fetch_row ($res);$/;"	v
+row	model/common.db.model.php	/^    $row = $g_db_conn->query($sql);$/;"	v
+row	model/common.db.model.php	/^    $row = $g_db_conn->selectOne($sql);$/;"	v
+rows	model/common.db.model.php	/^    $rows = $g_db_conn->selectAll($sql);$/;"	v
+s_url	lib/functions.php	/^    $s_url = UID_CHANGE_URL;$/;"	v
+saddr	lib/functions.php	/^    $saddr = 0;$/;"	v
+salt	model/common.db.model.php	/^    $salt = $row['salt'];$/;"	v
+salt	model/common.db.model.php	/^    $salt = rand();$/;"	v
+salt1_str	model/common.db.model.php	/^    $salt1_str = $md5_2 . $salt_hex_str;$/;"	v
+salt2_str	model/common.db.model.php	/^    $salt2_str = $md5_3 . $salt_hex_str;$/;"	v
+salt_hex_str	model/common.db.model.php	/^    $salt_hex_str = sprintf("%010x", $salt);$/;"	v
+salt_pwd	model/common.db.model.php	/^    $salt_pwd = generate_salt_passwd($salt, $new_pasword);$/;"	v
+salt_pwd	model/common.db.model.php	/^    $salt_pwd = generate_salt_passwd($salt, $password);$/;"	v
+save_user_id	model/common.db.model.php	/^    $save_user_id = $row['userid'];$/;"	v
+security_code	tool/userid_generate.php	/^$security_code = "";$/;"	v
+selectAll	lib/Mysql.class.php	/^    public function selectAll($sql)$/;"	f
+selectLimit	lib/Mysql.class.php	/^    public function selectLimit($sql, $numrows=-1, $offset=-1)$/;"	f
+selectOne	lib/Mysql.class.php	/^    public function selectOne($sql)$/;"	f
+select_action	account_service.php	/^function select_action()$/;"	f
+seqno	lib/functions.php	/^    $seqno = 0;$/;"	v
+service	account_service.php	/^    $service = isset($_REQUEST['service']) ? intval($_REQUEST['service']) : 0;$/;"	v
+session	account_service.php	/^    $session = $_REQUEST['session'];$/;"	v
+session_handler	account_service.php	/^    $session_handler = new c_account_session($user_id, $session);$/;"	v
+setDebug	lib/Mysql.class.php	/^    public function setDebug()$/;"	f
+set_log_directory	lib/Log.class.php	/^	public function set_log_directory($directory)$/;"	f
+sets	lib/Mysql.class.php	/^        $sets = array ();$/;"	v
+sign	lib/functions.php	/^    $sign = UID_CHANGE_SIGN;$/;"	v
+sign_type	lib/functions.php	/^    $sign_type = $_REQUEST['sign_type'];$/;"	v
+signature	lib/functions.php	/^    $signature = md5(http_build_query($data) . "&sign=" . $sign);$/;"	v
+size	lib/Log.class.php	/^				$size = filesize ("$test_name");$/;"	v
+sql	lib/Mysql.class.php	/^                $sql = substr($sql, 0, -1);$/;"	v
+sql	lib/Mysql.class.php	/^            $sql = 'DELETE FROM '.$table.' WHERE '.$where;$/;"	v
+sql	lib/Mysql.class.php	/^            $sql = 'DELETE FROM '.$table;$/;"	v
+sql	lib/Mysql.class.php	/^            $sql = 'INSERT INTO '.$table.' ('.implode(',',$fields).') VALUES ('.implode ( ',',$values ).')';$/;"	v
+sql	lib/Mysql.class.php	/^            $sql = 'INSERT INTO '.$table.' ('.implode(',',$ifields).') VALUES ('.implode ( ',',$ivalues ).')';$/;"	v
+sql	lib/Mysql.class.php	/^            $sql = 'UPDATE ' . $table . ' SET ' . implode ( ', ', $sets ) . ' WHERE ' . $where;$/;"	v
+sql	model/common.db.model.php	/^        $sql = "SELECT COUNT(id) AS idcnt FROM db_userid.t_register_userid".$/;"	v
+sql	model/common.db.model.php	/^        $sql = "SELECT MIN(userid) AS min_uid FROM db_userid.t_register_userid".$/;"	v
+sql	model/common.db.model.php	/^        $sql = "UPDATE db_userid.t_register_userid set use_flag = 1 WHERE userid = {$user_id}";$/;"	v
+sql	model/common.db.model.php	/^    $sql = "SELECT id, name".$/;"	v
+sql	model/common.db.model.php	/^    $sql = "SELECT max(userid) AS max_uid FROM db_userid.t_register_userid";$/;"	v
+sql	model/common.db.model.php	/^    $sql = "SELECT start_uid, end_uid FROM db_userid.t_generate_userid_transaction".$/;"	v
+sql	model/common.db.model.php	/^    $sql = "SELECT start_uid, end_uid".$/;"	v
+sql	model/common.db.model.php	/^    $sql = "SELECT status FROM {$table_name} WHERE userid = '{$user_id}'";$/;"	v
+sql	model/common.db.model.php	/^    $sql = "SELECT userid, dead_time FROM {$table_name} WHERE session = '{$session}'";$/;"	v
+sql	model/common.db.model.php	/^    $sql = "SELECT userkey, type, channel, userid FROM {$table_name}".$/;"	v
+sql	model/common.db.model.php	/^    $sql = "SELECT username, email, status, salt FROM {$table_name}".$/;"	v
+sql	model/common.db.model.php	/^    $sql = "SELECT username, passwd, status, salt FROM {$table_name}".$/;"	v
+sql	model/common.db.model.php	/^    $sql = sprintf($/;"	v
+start_generate_userid	model/userid.gen.class.php	/^    function start_generate_userid()$/;"	f
+start_register	model/register.class.php	/^    function start_register()$/;"	f
+start_uid	model/common.db.model.php	/^        $start_uid = $row['start_uid'];$/;"	v
+start_uid	model/common.db.model.php	/^    $start_uid = $max_uid + 1;$/;"	v
+status	model/common.db.model.php	/^    $status = intval($row['status']);$/;"	v
+str	lib/functions.php	/^    $str = '';$/;"	v
+str_msg	lib/web.utils.php	/^	$str_msg = "<script language=javascript>\\n";$/;"	v
+table_name	model/common.db.model.php	/^        $table_name = "db_userid.t_register_userid";$/;"	v
+table_name	model/common.db.model.php	/^        $table_name = sprintf("db_user_info.t_user_info_%02d", $user_id % 100);$/;"	v
+table_name	model/common.db.model.php	/^    $table_name = "db_userid.t_generate_userid_transaction";$/;"	v
+table_name	model/common.db.model.php	/^    $table_name = sprintf("db_user_info.t_user_info_%02d", $user_id % 100);$/;"	v
+table_name	model/common.db.model.php	/^    $table_name = sprintf("db_user_info.t_user_session_%02d", $user_id % 100);$/;"	v
+table_name	model/common.db.model.php	/^    $table_name = sprintf("db_userid_key_map.t_key_userid_%02d", $hash_key % 100);$/;"	v
+table_name	model/common.db.model.php	/^    $table_name = sprintf("db_userid_key_map.t_userid_key_%02d", $hash_key % 100);$/;"	v
+test_name	lib/Log.class.php	/^			$test_name = sprintf("%s%0{$this->file_appendix_len}d", $file_name, $i);$/;"	v
+time	lib/functions.php	/^    $time = time();$/;"	v
+timestamp	lib/functions.php	/^    $timestamp = time();$/;"	v
+token_string	model/account_verfiy.class.php	/^        $token_string = "{$user_id}@{$date}@" . ACCOUNT_ACCESS_TOKE_PRIVATE_KEY;$/;"	v
+trace	lib/Log.class.php	/^	public function trace($message)$/;"	f
+transports	lib/web.utils.php	/^		$transports = "ssl:\/\/";$/;"	v
+transports	lib/web.utils.php	/^		$transports = "tcp:\/\/";$/;"	v
+transports	lib/web.utils.php	/^	$transports = "";$/;"	v
+uid_change_to_int	lib/functions.php	/^function uid_change_to_int($channel_id, $key)$/;"	f
+uid_row	model/common.db.model.php	/^        $uid_row = $g_db_conn->selectOne($sql);$/;"	v
+update	lib/Mysql.class.php	/^    public function update($table, $field_values, $where = '')$/;"	f
+url	lib/functions.php	/^            $url = is_array($data) ? $url.'?'.http_build_query($data) : $url . '?' .$data ;$/;"	v
+url	lib/functions.php	/^        $url = (false === strpos($url, 'http:\/\/') && false === strpos($url, 'https:\/\/'))$/;"	v
+url	lib/web.utils.php	/^	    $url = MOLE_PAY_FAILURE_URL ;$/;"	v
+url	lib/web.utils.php	/^	    $url = MOLE_PAY_SUCCESS_URL ;$/;"	v
+url	lib/web.utils.php	/^	$url = "";$/;"	v
+urlarr	lib/web.utils.php	/^	$urlarr     = parse_url($url);$/;"	v
+user_count	model/common.db.model.php	/^    $user_count = db_get_channel_userid_remain_count($channel_id);$/;"	v
+user_count	tool/userid_generate.php	/^$user_count = $argv[2];$/;"	v
+user_email	account_service.php	/^    $user_email = $_REQUEST['email'];$/;"	v
+user_email	account_service.php	/^    $user_email = trim($_REQUEST['email']);$/;"	v
+user_id	account_service.php	/^    $user_id = $_REQUEST['user_id'];$/;"	v
+user_id	model/account_bind_email.class.php	/^        $user_id = db_get_key_userid($this->m_user_name, ACCOUNT_KEY_TYPE_NAME, $this->m_channel_id);$/;"	v
+user_id	model/account_modify_password_by_old.class.php	/^        $user_id = db_get_key_userid($this->m_user_name, ACCOUNT_KEY_TYPE_NAME, $this->m_channel_id);$/;"	v
+user_id	model/account_reset_passwd.class.php	/^        $user_id = db_get_key_userid($this->m_user_name, ACCOUNT_KEY_TYPE_NAME, $this->m_channel_id);$/;"	v
+user_id	model/account_verfiy.class.php	/^        $user_id = db_get_key_userid($this->m_user_name, ACCOUNT_KEY_TYPE_NAME, $this->m_channel_id);$/;"	v
+user_id	model/common.db.model.php	/^        $user_id = $max_uid + $i;$/;"	v
+user_id	model/common.db.model.php	/^    $user_id = db_get_a_userid($channel_id);$/;"	v
+user_id	model/register.class.php	/^            $user_id = db_get_key_userid($this->m_user_email, ACCOUNT_KEY_TYPE_EMAIL, $this->m_channel_id);$/;"	v
+user_id	model/register.class.php	/^        $user_id = db_get_key_userid($this->m_user_name, ACCOUNT_KEY_TYPE_NAME, $this->m_channel_id);$/;"	v
+user_id	model/register.class.php	/^        $user_id = db_register_userid($this->m_channel_id, $this->m_user_name,$/;"	v
+user_ip	model/common.db.model.php	/^    $user_ip = ip2long($client_ip);$/;"	v
+user_name	account_service.php	/^    $user_name = $_REQUEST['name'];$/;"	v
+user_passwd	account_service.php	/^    $user_passwd = $_REQUEST['passwd'];$/;"	v
+user_status	model/common.db.model.php	/^    $user_status = $row['status'];$/;"	v
+userid_range	model/userid.gen.class.php	/^        $userid_range = array($/;"	v
+userid_remain	model/common.db.model.php	/^    $userid_remain = 0;$/;"	v
+val	lib/Mysql.class.php	/^        $val = mysql_fetch_array($this->query ( $sql ));$/;"	v
+values	lib/Mysql.class.php	/^        $values = array ();$/;"	v
+version	lib/Mysql.class.php	/^    private $version = "";      $/;"	v
+warn	lib/Log.class.php	/^	public function warn($message)$/;"	f
+where	lib/Mysql.class.php	/^    public function delete($table, $where = '')$/;"	v
+where	lib/Mysql.class.php	/^    public function update($table, $field_values, $where = '')$/;"	v
+write_log	lib/functions.php	/^function write_log($type, $file, $line, $func, $info)$/;"	f

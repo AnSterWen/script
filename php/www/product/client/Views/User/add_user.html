@@ -1,0 +1,47 @@
+<script type="text/javascript">
+    function submit(){
+        var user_name = $("#user_name").val();
+        var user_password = $("#user_password").val();
+        var auth = "";
+        $("input[name='auth']:checked").each(function(){
+            auth += this.value + ",";
+        })
+
+        $.get("index.php",{'m':'admin_user','a':'submit_user','user_name':user_name,'user_password':user_password,'auth':auth},function(data){
+            if(data.indexOf('ok') >= 0){
+                window.location.href = "index.php?m=admin_user&a=user_list";
+            }else{
+                alert(data);
+            }
+        })
+    }
+</script>
+
+<!--<div class="default_page_div">-->
+    <!--<span onclick="submit()">test</span>-->
+        <div id="" class="myform">
+            <div>
+                <label>请输入用户名称：</label>
+                <input style="margin-right: 1px;" type="text" name="user_name" id="user_name" value="" >
+            </div>
+            <br>
+            <div>
+                <label>请输入用户密码：</label>
+                <input type="password" name="user_password" id="user_password" value="">
+            </div>
+            <br>
+            <div>
+                <label>请分配用户权限：</label>
+                <foreach Name="response_data.kinds" Key="key" Var="val">
+                    <p><input type="checkbox" value="[$val.auth]" name="auth"><label>[$val.title]</label></p>
+                </foreach>
+            </div>
+            <br>
+            <div>
+                <input onclick="submit();" style="margin-left: 86px" type="submit" class="common-button" value="增加用户" />
+            </div>
+        </div>
+
+    <!--</div>-->
+<!--</div>-->
+

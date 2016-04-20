@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static "admin/css/base.css" %}" />
+<link rel="stylesheet" href="{% static "admin/css/forms.css" %}" />
+<link rel="stylesheet" type="text/css" href="/admin_media/css/base.css" /> 
+<link rel="stylesheet" type="text/css" href="/admin_media/css/forms.css" /> 
+<script type="text/javascript">window.__admin_media_prefix__ = "/admin_media/";</script>
+<script type="text/javascript" src="/admin/jsi18n/"></script>
+<script type="text/javascript" src="/admin_media/js/core.js"></script>
+{{ form.media }}
+<script type="text/javascript" src="{% static "admin/js/core.js" %}" />
+{% block view%}
+{{form}}
+<form id="changelist-search" action="" method="get" onsubmit="set_randomnum()"> 
+ <div>
+ <label for="searchbar"><img src="/admin_media/img/admin/icon_searchbox.png" alt="Search" /></label> 
+ 时间:{{ form.time }}
+ <input type="hidden" name="randomnum" id="id_randomnum" value=""/>
+ <input type="submit" value="搜索" /> 
+</div> 
+</form>
+{% endblock %}

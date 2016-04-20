@@ -1,0 +1,346 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ACCOUNT_DEFAULT_KEY	config/config.php	/^define('ACCOUNT_DEFAULT_KEY','7b6ded9322c8d56768a4245ea4684523');$/;"	d
+ACCOUNT_E_BACK_SYSTEM_BUSY	common/status_code.php	/^define ("ACCOUNT_E_BACK_SYSTEM_BUSY",	1005); 	\/\/后台系统繁忙$/;"	d
+ACCOUNT_E_CHECK_EMAIL	common/status_code.php	/^define("ACCOUNT_E_CHECK_EMAIL",1017);$/;"	d
+ACCOUNT_E_CHECK_USERID_ERROR	common/status_code.php	/^define("ACCOUNT_E_CHECK_USERID_ERROR",1015);$/;"	d
+ACCOUNT_E_CHECK_USER_EMAIL_FAILE	common/status_code.php	/^define("ACCOUNT_E_CHECK_USER_EMAIL_FAILE",1016);$/;"	d
+ACCOUNT_E_CHECK_VERIFY_CODE_FAILED	common/status_code.php	/^define ("ACCOUNT_E_CHECK_VERIFY_CODE_FAILED",   1014);  \/\/ 检测验证码错误$/;"	d
+ACCOUNT_E_EMAIL_BIND_ERROR	common/status_code.php	/^define("ACCOUNT_E_EMAIL_BIND_ERROR",1020);$/;"	d
+ACCOUNT_E_EMAIL_EXISTED	common/status_code.php	/^define("ACCOUNT_E_EMAIL_EXISTED",1019);$/;"	d
+ACCOUNT_E_INVALID_ACTION	common/status_code.php	/^define ("ACCOUNT_E_INVALID_ACTION",		1003); 	\/\/无效的action值$/;"	d
+ACCOUNT_E_INVALID_PARAMS	common/status_code.php	/^define ("ACCOUNT_E_INVALID_PARAMS", 	1002); 	\/\/无效的参数$/;"	d
+ACCOUNT_E_INVALID_SIGN	common/status_code.php	/^define ("ACCOUNT_E_INVALID_SIGN",       1006);  \/\/签名失败$/;"	d
+ACCOUNT_E_INVALID_USERID	common/status_code.php	/^define ("ACCOUNT_E_INVALID_USERID",     1008);  \/\/无效的米米号$/;"	d
+ACCOUNT_E_NOT_EXISTED_ERROR	common/status_code.php	/^define("ACCOUNT_E_NOT_EXISTED_ERROR",1105);$/;"	d
+ACCOUNT_E_PASSWD_ALREADY_SET	common/status_code.php	/^define ("ACCOUNT_E_PASSWD_ALREADY_SET", 1011);  \/\/ 无线第一次设置密码时密码已经被设置过了$/;"	d
+ACCOUNT_E_PWD_ERROR	common/status_code.php	/^define("ACCOUNT_E_PWD_ERROR",1103);$/;"	d
+ACCOUNT_E_REQUEST_TIMEOUT	common/status_code.php	/^define ("ACCOUNT_E_REQUEST_TIMEOUT",    1007);  \/\/客户端请求时间戳已经过期$/;"	d
+ACCOUNT_E_SEND_ERROR	common/status_code.php	/^define("ACCOUNT_E_SEND_ERROR",1021);$/;"	d
+ACCOUNT_E_SUCCESS	common/status_code.php	/^define ("ACCOUNT_E_SUCCESS",			0); 	\/\/处理成功$/;"	d
+ACCOUNT_E_SYSTEM_BUSY	common/status_code.php	/^define ("ACCOUNT_E_SYSTEM_BUSY",        1004); 	\/\/系统繁忙$/;"	d
+ACCOUNT_E_SYSTEM_ERROR	common/status_code.php	/^define ("ACCOUNT_E_SYSTEM_ERROR",		1001); 	\/\/系统处理错误$/;"	d
+ACCOUNT_E_SYS_ERROR	common/status_code.php	/^define("ACCOUNT_E_SYS_ERROR",1018);$/;"	d
+ACCOUNT_E_THIRD_CHECK_FIALED	common/status_code.php	/^define("ACCOUNT_E_THIRD_CHECK_FIALED", 1112);$/;"	d
+ACCOUNT_E_TOO_MUCH_WRONG	common/status_code.php	/^define ("ACCOUNT_E_TOO_MUCH_WRONG",     1010);  \/\/ 接口错误次数过多或接口尝试次数过多$/;"	d
+ACCOUNT_E_UDID_NOT_REGISTER	common/status_code.php	/^define ("ACCOUNT_E_UDID_NOT_REGISTER",  1013);  \/\/ 查询设备号对应米米号时设备号未注册过$/;"	d
+ACCOUNT_E_VERIFY_ERROR	common/status_code.php	/^define("ACCOUNT_E_VERIFY_ERROR", 1113);$/;"	d
+ACCOUNT_E_WRONG_OLD_PASSWD	common/status_code.php	/^define ("ACCOUNT_E_WRONG_OLD_PASSWD",   1012);  \/\/ 用老密码修改新密码时老密码错误$/;"	d
+ACCOUNT_SING_KEY	common/status_code.php	/^define("ACCOUNT_SING_KEY",'1313154ADFASDFdfsdf#@k');$/;"	d
+DEBUG_LEVEL	common/logger.class.php	/^define("DEBUG_LEVEL", 5);$/;"	d
+DEBUG_PREFIX	common/logger.class.php	/^define("DEBUG_PREFIX", "debug");$/;"	d
+DEF_APPENDIX_LEN	common/logger.class.php	/^define("DEF_APPENDIX_LEN", 3); \/\/ 默认每天同级别日志文件最多可以有1000个$/;"	d
+DEF_DIR	common/logger.class.php	/^define("DEF_DIR", ".\/");  \/\/ 默认将日志文件写在当前目录$/;"	d
+DEF_FILE_PREFIX	common/logger.class.php	/^define("DEF_FILE_PREFIX", "");$/;"	d
+DEF_LEVEL	common/logger.class.php	/^define("DEF_LEVEL", TRACE_LEVEL);$/;"	d
+DEF_MAX_SIZE	common/logger.class.php	/^define("DEF_MAX_SIZE", 30*1024*1024);	\/\/ 30MB$/;"	d
+ERROR_LEVEL	common/logger.class.php	/^define("ERROR_LEVEL", 2);$/;"	d
+ERROR_PREFIX	common/logger.class.php	/^define("ERROR_PREFIX", "error");$/;"	d
+FATAL_LEVEL	common/logger.class.php	/^define("FATAL_LEVEL", 1);$/;"	d
+FATAL_PREFIX	common/logger.class.php	/^define("FATAL_PREFIX", "fatal");$/;"	d
+IGG_GAMELOG_KEY	config/config.php	/^\/\/ define('IGG_GAMELOG_KEY','cdfef1d6d6119a51aa0c950eaaf3ee19');$/;"	d
+IGG_GAMELOG_URL	config/config.php	/^\/\/ define('IGG_GAMELOG_URL', 'http:\/\/192.168.68.225\/platform\/webserver\/igg_gamelog.php');$/;"	d
+INFO_LEVEL	common/logger.class.php	/^define("INFO_LEVEL",  4);$/;"	d
+INFO_PREFIX	common/logger.class.php	/^define("INFO_PREFIX",  "info");$/;"	d
+LOGGER_DIR	config/config.php	/^define ('LOGGER_DIR',           dirname(dirname(__FILE__)) . '\/log');$/;"	d
+Logger	common/logger.class.php	/^class Logger$/;"	c
+MSGLOG_PATH	config/config.php	/^define ('MSGLOG_PATH',          dirname(__FILE__) . '\/..\/stat\/service.bin');$/;"	d
+Security	common/security.class.php	/^class Security$/;"	c
+TRACE_LEVEL	common/logger.class.php	/^define("TRACE_LEVEL", 6);$/;"	d
+TRACE_PREFIX	common/logger.class.php	/^define("TRACE_PREFIX", "trace");$/;"	d
+UID_CHANGE_KEY	config/config.php	/^\/\/ define('UID_CHANGE_KEY','Qd3GcDvVKj4YuLbX');$/;"	d
+UID_CHANGE_SIGN	config/config.php	/^\/\/ define('UID_CHANGE_SIGN','7af1ebd05e55fd2bbf196d40db01cedb');$/;"	d
+UID_CHANGE_URL	config/config.php	/^\/\/ define('UID_CHANGE_URL','http:\/\/192.168.68.225\/platform\/accountMap\/account_map.php');$/;"	d
+WARN_LEVEL	common/logger.class.php	/^define("WARN_LEVEL",  3);$/;"	d
+WARN_PREFIX	common/logger.class.php	/^define("WARN_PREFIX",  "warn");$/;"	d
+__construct	common/logger.class.php	/^	function __construct($directory = DEF_DIR, $level = DEF_LEVEL, $file_prefix = DEF_FILE_PREFIX, $file_appendix_len = DEF_APPENDIX_LEN , $max_size = DEF_MAX_SIZE)$/;"	f
+__construct	common/socket.class.php	/^	function __construct($payserip,$payserport)$/;"	f
+__construct	run/user.class.php	/^    function __construct($s_handler=false)$/;"	f
+__destruct	common/logger.class.php	/^	function __destruct()$/;"	f
+__destruct	common/socket.class.php	/^	function __destruct()$/;"	f
+__destruct	common/socket_handler.class.php	/^    function __destruct()$/;"	f
+a_data	run/user.class.php	/^            $a_data = array('access_token'=>strval($s_token),$/;"	v
+a_data	run/user.class.php	/^        $a_data = array($/;"	v
+a_data	run/user.class.php	/^        $a_data = array('signed_key'=>strval($s_token),);$/;"	v
+a_extra	run/user.class.php	/^            $a_extra = explode(";", $s_extra_data);$/;"	v
+a_extra	run/user.class.php	/^            $a_extra = json_decode($s_extra_data, true);$/;"	v
+a_extra	run/user.class.php	/^        $a_extra = json_decode($a_params['extra_data'], true);$/;"	v
+a_ip	common/functions.php	/^    $a_ip = unpack('Nip', pack('L', $i_ip)) ;$/;"	v
+a_result	common/functions.php	/^    $a_result = get_url_contents($s_url, $data, 'get', 'json');$/;"	v
+a_result	run/user.class.php	/^            $a_result = get_url_contents($s_url, $a_data, 'get', 'json');$/;"	v
+a_result	run/user.class.php	/^        $a_result = $this->{$s_func}($a_params,$s_url);$/;"	v
+a_result	run/user.class.php	/^        $a_result = get_url_contents($s_url, $a_data, 'get', 'json');$/;"	v
+a_result	run/user.class.php	/^        $a_result = json_decode($json_str, true);$/;"	v
+a_uid	run/user.class.php	/^            $a_uid = explode(":", $s_uids);$/;"	v
+a_verify	run/user.class.php	/^        $a_verify = include dirname(dirname(__FILE__)).'\/config\/verify_login.php';$/;"	v
+action	account_service.php	/^    $action = intval(isset($_REQUEST['service'])?$_REQUEST['service']:0);$/;"	v
+app_secret	run/user.class.php	/^            $app_secret = $a_params['app_secret'];$/;"	v
+app_secret	run/user.class.php	/^        $app_secret = $a_params['app_secret'];$/;"	v
+arg	common/functions.php	/^    $arg = array();$/;"	v
+bin_str	common/functions.php	/^\/\/    $bin_str = '';$/;"	v
+buf	common/socket.class.php	/^		$buf = socket_read($this->socket,4096);$/;"	v
+buf	common/socket.class.php	/^		$buf = socket_read($this->socket,4096,PHP_BINARY_READ);$/;"	v
+cal_sign	common/functions.php	/^    $cal_sign = md5($sign_string);$/;"	v
+ch	1.php	/^$ch = curl_init();$/;"	v
+ch	common/functions.php	/^        $ch = curl_init();$/;"	v
+channel_id	account_service.php	/^    $channel_id = $_REQUEST['channel'];$/;"	v
+channel_id	run/user.class.php	/^        $channel_id = $a_params['channel_id'];$/;"	v
+channel_param	account_service.php	/^    $channel_param = array();$/;"	v
+channel_param	account_service.php	/^    $channel_param = get_channel_params($game_name, $channel_id);$/;"	v
+checkEmail	common/functions.php	/^ function checkEmail($s_email)$/;"	f
+check_ip	common/web_utils.php	/^function check_ip($allowed_ips, $checked_ip)$/;"	f
+check_sign	common/functions.php	/^function check_sign()$/;"	f
+cheetahmobileVerify	run/user.class.php	/^    public function cheetahmobileVerify($aParams, $sUrl)$/;"	f
+close	common/socket.class.php	/^	function close()$/;"	f
+close	common/socket_handler.class.php	/^    public function close()$/;"	f
+cocoVerify	run/user.class.php	/^    public function cocoVerify($a_params,$s_url)$/;"	f
+connect	common/socket_handler.class.php	/^    public function connect($host, $port)$/;"	f
+content	common/logger.class.php	/^		$content = $now.$message."\\n";$/;"	v
+content	common/web_utils.php	/^        $content = '';$/;"	v
+current_date	common/logger.class.php	/^		$current_date = strftime("%Y%m%d");	\/\/format:yyyymmdd$/;"	v
+data	1.php	/^$data = array($/;"	v
+data	common/functions.php	/^            $data = is_array($data) ? http_build_query($data) : $data ;$/;"	v
+data	common/functions.php	/^    $data = array($/;"	v
+data	common/security.class.php	/^        $data = base64_encode($data);$/;"	v
+data	common/security.class.php	/^        $data = mcrypt_generic($td, $input);$/;"	v
+data	common/socket_handler.class.php	/^        $data = @socket_read($this->socket, 1 << 16, PHP_BINARY_READ);$/;"	v
+debug	common/logger.class.php	/^	public function debug($message)$/;"	f
+decrypt	common/security.class.php	/^    public static function decrypt($sStr, $sKey)$/;"	f
+decrypted	common/security.class.php	/^        $decrypted = preg_replace( '\/[^[:print:]]\/', '',$decrypted);$/;"	v
+decrypted	common/security.class.php	/^        $decrypted = trim(mdecrypt_generic($td, base64_decode($sStr))) ;$/;"	v
+default_timezone	common/functions.php	/^    $default_timezone = date_default_timezone_get();$/;"	v
+dump_str	common/socket_handler.class.php	/^        $dump_str = array();$/;"	v
+encrypt	common/security.class.php	/^    public static function encrypt($input, $key)$/;"	f
+encrypted	common/functions.php	/^    $encrypted = array();$/;"	v
+errno	common/web_utils.php	/^	$errno      = "";$/;"	v
+error	common/logger.class.php	/^	public function error($message)$/;"	f
+errstr	common/web_utils.php	/^	$errstr     = "";$/;"	v
+exit_msg	common/socket.class.php	/^	\/\/var $exit_msg = "后台繁忙!暂时无法为您服务!如果您一直看到此信息,请联系客服人员!谢谢!";$/;"	v
+facebookVerify	run/user.class.php	/^    public function facebookVerify($a_params, $s_url)$/;"	f
+fatal	common/logger.class.php	/^	public function fatal($message)$/;"	f
+file	common/logger.class.php	/^				$file = fopen("$test_name",'x');$/;"	v
+file	common/logger.class.php	/^			$file = @fopen("$test_name","r");$/;"	v
+file_level_prefix	common/logger.class.php	/^		$file_level_prefix = $this->get_log_level_prefix($level);$/;"	v
+file_name	common/logger.class.php	/^					$file_name = $test_name;$/;"	v
+file_name	common/logger.class.php	/^		$file_name = $this->directory.$this->file_prefix.$file_level_prefix.$current_date;$/;"	v
+file_name	common/logger.class.php	/^		$file_name = $this->get_file_name($level);$/;"	v
+file_path	account_service.php	/^    $file_path = $g_game_xml[$game];$/;"	v
+first	common/socket_handler.class.php	/^            $first = dechex(ord($data[$i]) >> 4);$/;"	v
+flag	common/functions.php	/^    $flag = 0;$/;"	v
+flag0	common/functions.php	/^    $flag0 = 0;$/;"	v
+fp	common/web_utils.php	/^	$fp=@fsockopen($transports . $urlarr['host'],$urlarr['port'],$errno,$errstr,$time_out);$/;"	v
+g_allow_games	config/config.php	/^$g_allow_games = array($/;"	v
+g_game_xml	config/config.php	/^$g_game_xml = array($/;"	v
+g_logger	account_service.php	/^$g_logger = new Logger(LOGGER_DIR);$/;"	v
+g_logger	common/functions.php	/^$g_logger = false;$/;"	v
+game	common/functions.php	/^        $game = $params['game'];$/;"	v
+game_name	account_service.php	/^    $game_name = $_REQUEST['game'];$/;"	v
+getClientIp	common/functions.php	/^function getClientIp ( $is_long = FALSE )$/;"	f
+get_channel_params	account_service.php	/^function get_channel_params($game, $channel_id)$/;"	f
+get_file_name	common/logger.class.php	/^	private function get_file_name($level)$/;"	f
+get_game_key	common/functions.php	/^function get_game_key($game)$/;"	f
+get_http_response	common/web_utils.php	/^function get_http_response($url, $input_charset = '', $time_out = "60")$/;"	f
+get_log_level	common/logger.class.php	/^	public function get_log_level()$/;"	f
+get_log_level_prefix	common/logger.class.php	/^	public function get_log_level_prefix($level)$/;"	f
+get_url_contents	common/functions.php	/^    function get_url_contents($url, $data, $method="get", $data_type='var_export', $timeout=60)$/;"	f
+gmtime	common/functions.php	/^function gmtime()$/;"	f
+goodgamesVerify	run/user.class.php	/^    public function goodgamesVerify($a_params,$s_url)$/;"	f
+high	common/functions.php	/^\/\/        $high = hexdec($hex_str[$i]);$/;"	v
+hlen	common/functions.php	/^    $hlen = 24;$/;"	v
+i_client_id	run/user.class.php	/^        $i_client_id = urldecode($a_params['app_id']);$/;"	v
+i_ip	common/functions.php	/^    $i_ip = is_string($m_ip) ? ip2long($m_ip) : $m_ip ;$/;"	v
+i_match	common/functions.php	/^    $i_match = !preg_match("\/^[a-z0-9][a-z0-9\\._-]{2,}@([a-z0-9]+([a-z0-9-]*[a-z0-9])*\\.)+[a-z]+$\/", $s_email);$/;"	v
+i_type	run/user.class.php	/^        $i_type = (int)$a_params['channel_id'];$/;"	v
+iggVerify	run/user.class.php	/^    public function iggVerify($a_params, $s_url)$/;"	f
+igg_game_log	common/functions.php	/^function igg_game_log($data)$/;"	f
+info	common/logger.class.php	/^	public function info($message)$/;"	f
+innerVerify	run/user.class.php	/^    public function innerVerify($a_params,$s_url)$/;"	f
+inner_check_sign	common/functions.php	/^function inner_check_sign($check_array, $pri_key)$/;"	f
+input	common/security.class.php	/^        $input = Security::pkcs5_pad($input, $size);$/;"	v
+input_charset	common/web_utils.php	/^function get_http_response($url, $input_charset = '', $time_out = "60")$/;"	v
+ip	common/functions.php	/^            $ip = "Unknown";$/;"	v
+ip	common/functions.php	/^            $ip = $HTTP_SERVER_VARS["HTTP_CLIENT_IP"];$/;"	v
+ip	common/functions.php	/^            $ip = $HTTP_SERVER_VARS["HTTP_X_FORWARDED_FOR"];$/;"	v
+ip	common/functions.php	/^            $ip = $HTTP_SERVER_VARS["REMOTE_ADDR"];$/;"	v
+ip	common/functions.php	/^            $ip = getenv("HTTP_CLIENT_IP");$/;"	v
+ip	common/functions.php	/^            $ip = getenv("HTTP_X_FORWARDED_FOR");$/;"	v
+ip	common/functions.php	/^            $ip = getenv("REMOTE_ADDR");$/;"	v
+ip	common/functions.php	/^            $ip = ip2netlong($ip);$/;"	v
+ip2netlong	common/functions.php	/^function ip2netlong($m_ip)$/;"	f
+is_long	common/functions.php	/^function getClientIp ( $is_long = FALSE )$/;"	v
+iv	common/security.class.php	/^        $iv = mcrypt_create_iv (mcrypt_enc_get_iv_size($td), MCRYPT_RAND);$/;"	v
+iv	common/security.class.php	/^        $iv = mcrypt_create_iv(mcrypt_enc_get_iv_size($td), MCRYPT_RAND);$/;"	v
+json_len	run/user.class.php	/^        $json_len = strlen($s_return) - 32;$/;"	v
+json_str	run/user.class.php	/^        $json_str = substr($s_return, 0, $json_len);$/;"	v
+k	common/functions.php	/^    foreach ($data as $k => $v) {$/;"	v
+kakaoVerify	run/user.class.php	/^    public function kakaoVerify($a_params,$s_url)$/;"	f
+key	common/functions.php	/^        $key = $pri_key;$/;"	v
+key	common/functions.php	/^        $key = get_game_key($game);$/;"	v
+key	common/functions.php	/^        if ($key == 'sign' || $key == 'sign_type' || $key == 'PHPSESSID' || $key == '__utma' || $key == '__utmz') {$/;"	v
+key	common/functions.php	/^    foreach ($arg as $key => $val) {$/;"	v
+key	common/functions.php	/^    foreach ($check_array as $key => $val) {$/;"	v
+key	common/functions.php	/^    foreach ($params as $key => $val) {$/;"	v
+len	common/functions.php	/^    $len = 24;$/;"	v
+len	common/functions.php	/^\/\/    $len = strlen($hex_str);$/;"	v
+level	common/logger.class.php	/^	function __construct($directory = DEF_DIR, $level = DEF_LEVEL, $file_prefix = DEF_FILE_PREFIX, $file_appendix_len = DEF_APPENDIX_LEN , $max_size = DEF_MAX_SIZE)$/;"	v
+log	common/logger.class.php	/^	protected  function log($message, $level)$/;"	f
+log_file_fd	common/functions.php	/^    $log_file_fd = fopen($log_file,"ab");$/;"	v
+log_level_prefix	common/logger.class.php	/^				$log_level_prefix = DEBUG_PREFIX;$/;"	v
+log_level_prefix	common/logger.class.php	/^				$log_level_prefix = ERROR_PREFIX;$/;"	v
+log_level_prefix	common/logger.class.php	/^				$log_level_prefix = FALSE;$/;"	v
+log_level_prefix	common/logger.class.php	/^				$log_level_prefix = FATAL_PREFIX;$/;"	v
+log_level_prefix	common/logger.class.php	/^				$log_level_prefix = INFO_PREFIX;$/;"	v
+log_level_prefix	common/logger.class.php	/^				$log_level_prefix = TRACE_PREFIX;$/;"	v
+log_level_prefix	common/logger.class.php	/^				$log_level_prefix = WARN_PREFIX;$/;"	v
+log_level_prefix	common/logger.class.php	/^		$log_level_prefix = FALSE;$/;"	v
+low	common/functions.php	/^\/\/        $low = hexdec($hex_str[$i + 1]);$/;"	v
+make_md5_sign	common/functions.php	/^function make_md5_sign($params, $pri_key = '')$/;"	f
+max_files	common/logger.class.php	/^		$max_files = pow(10, $this->file_appendix_len);$/;"	v
+mb_num	common/web_utils.php	/^function redirect_to($result, $mb_usage, $user_id, $channel_id, $mb_num=0)$/;"	v
+mcard_sendmsg	common/socket.class.php	/^	function mcard_sendmsg($msg)$/;"	f
+member_token	run/user.class.php	/^        $member_token = $a_result['member']['MemberToken'];$/;"	v
+method	common/functions.php	/^    function get_url_contents($url, $data, $method="get", $data_type='var_export', $timeout=60)$/;"	v
+mfaceVerify	run/user.class.php	/^    public function mfaceVerify($a_params,$s_url)$/;"	f
+msg	common/functions.php	/^    $msg = "[$file][$func][$line] $info";$/;"	v
+msglog	common/functions.php	/^function msglog($log_file, $type, $data_array)$/;"	f
+my_sign	common/functions.php	/^            $my_sign = make_md5_sign($_REQUEST);$/;"	v
+new_uid	run/user.class.php	/^        $new_uid = uid_change_to_int($a_params['channel_id'], $s_uid);$/;"	v
+nick_name	run/user.class.php	/^        $nick_name = $a_result['member']['nickname'];$/;"	v
+nick_name	run/user.class.php	/^        $nick_name = empty($a_result['result']['guest']) ? "" : $a_result['result']['guest'];$/;"	v
+now	common/logger.class.php	/^		$now = strftime("[%H:%M:%S]");  \/\/ current time,format hh:mm:ss$/;"	v
+output	1.php	/^$output = curl_exec($ch);$/;"	v
+output	common/functions.php	/^            $output = str_replace("'", "\\"", $output);$/;"	v
+output	common/functions.php	/^        $output = curl_exec($ch);$/;"	v
+output	common/web_utils.php	/^		    $output = var_export($response,TRUE);$/;"	v
+output	common/web_utils.php	/^		    $output ="Unsupported \\$result_format value:".$result_format;$/;"	v
+output	common/web_utils.php	/^	$output = "";$/;"	v
+output	common/web_utils.php	/^            $output = json_encode($response);$/;"	v
+packed_body	common/functions.php	/^    $packed_body = "";$/;"	v
+packed_data	common/functions.php	/^    $packed_data = $packed_header . $packed_body;$/;"	v
+packed_header	common/functions.php	/^    $packed_header = pack("SCCL5",$len,$hlen,$flag0,$flag,$saddr,$seqno,$type,$timestamp);$/;"	v
+pad	common/security.class.php	/^        $pad = $blocksize - (strlen($text) % $blocksize);$/;"	v
+param_xml	account_service.php	/^    $param_xml = simplexml_load_file($file_path);$/;"	v
+pay_type	common/web_utils.php	/^		$pay_type = "";$/;"	v
+pay_type	common/web_utils.php	/^	$pay_type = get_pay_type($channel_id);$/;"	v
+ping	common/socket_handler.class.php	/^    public function ping($host, $port)$/;"	f
+pkcs5_pad	common/security.class.php	/^    private static function pkcs5_pad($text, $blocksize)$/;"	f
+pkg_arr	common/socket.class.php	/^		$pkg_arr = @unpack("Lcommandid\/Lproto_len",$buf);$/;"	v
+pkg_len	common/socket.class.php	/^                $pkg_len = $tmp['pkg_len'];$/;"	v
+pkg_len	common/socket.class.php	/^        $pkg_len = 0;$/;"	v
+pri_key	common/functions.php	/^function make_md5_sign($params, $pri_key = '')$/;"	v
+pri_key	run/user.class.php	/^        $pri_key = $a_params['app_key'];$/;"	v
+process_response	common/web_utils.php	/^function process_response($response, $result_format)$/;"	f
+proto_len	common/socket.class.php	/^		$proto_len = $pkg_arr["proto_len"];$/;"	v
+rcv_sign	common/functions.php	/^    $rcv_sign = $check_array['sign'];$/;"	v
+read_buf	common/socket.class.php	/^        $read_buf = '';$/;"	v
+read_len	common/socket.class.php	/^        $read_len = 0;$/;"	v
+receive	common/socket_handler.class.php	/^    public function receive()$/;"	f
+redirect_to	common/web_utils.php	/^function redirect_to($result, $mb_usage, $user_id, $channel_id, $mb_num=0)$/;"	f
+res	run/user.class.php	/^        $res = get_url_contents($sUrl, array('access_token' => $aParams['sess_id']), 'get', 'json');$/;"	v
+res_arr	common/functions.php	/^    $res_arr = json_decode(Security::decrypt($res_str, UID_CHANGE_KEY), true);$/;"	v
+res_str	common/functions.php	/^    $res_str = get_url_contents(UID_CHANGE_URL, $encrypted, 'get', 'text');$/;"	v
+response	account_service.php	/^            $response = array('status_code' => ACCOUNT_E_INVALID_ACTION);$/;"	v
+response	account_service.php	/^            $response = verify();$/;"	v
+response	account_service.php	/^        $response = array('status_code' => ACCOUNT_E_SYSTEM_ERROR);$/;"	v
+response	account_service.php	/^    $response = array('status_code' => ACCOUNT_E_SYSTEM_ERROR);$/;"	v
+response	account_service.php	/^    \/\/    $response = array('status_code' => ACCOUNT_E_INVALID_SIGN);$/;"	v
+responseText	common/web_utils.php	/^		$responseText = trim(stristr($responseText,"\\r\\n\\r\\n"),"\\r\\n");$/;"	v
+responseText	common/web_utils.php	/^	$responseText = "";$/;"	v
+result	common/functions.php	/^            $result = '' ;$/;"	v
+result	common/functions.php	/^    $result = get_url_contents($s_url, $data, 'get', 'string');$/;"	v
+result	common/socket.class.php	/^		$result = socket_write($this->socket,$msg, strlen($msg) );$/;"	v
+result	common/socket_handler.class.php	/^        $result = $this->connect($host, $port);$/;"	v
+result	common/socket_handler.class.php	/^        $result = $this->receive();$/;"	v
+result	common/socket_handler.class.php	/^        $result = $this->send($data);$/;"	v
+result	common/socket_handler.class.php	/^        $result = @$this->connect($host, $port);$/;"	v
+result	common/socket_handler.class.php	/^        $result = @socket_connect($this->socket, $host, $port);$/;"	v
+result	common/socket_handler.class.php	/^        $result = @socket_write($this->socket, $data, strlen($data));$/;"	v
+ret	common/logger.class.php	/^		$ret = $this->log($message, DEBUG_LEVEL);$/;"	v
+ret	common/logger.class.php	/^		$ret = $this->log($message, ERROR_LEVEL);$/;"	v
+ret	common/logger.class.php	/^		$ret = $this->log($message, FATAL_LEVEL);$/;"	v
+ret	common/logger.class.php	/^		$ret = $this->log($message, INFO_LEVEL);$/;"	v
+ret	common/logger.class.php	/^		$ret = $this->log($message, TRACE_LEVEL);$/;"	v
+ret	common/logger.class.php	/^		$ret = $this->log($message, WARN_LEVEL);$/;"	v
+ret	common/socket.class.php	/^            $ret = socket_read($this->socket, 4096);$/;"	v
+ret	common/socket.class.php	/^            $ret = socket_write($this->socket,$/;"	v
+return	common/socket.class.php	/^        $return = socket_write($this->socket,$msg, strlen($msg));$/;"	v
+sStr	common/security.class.php	/^        $sStr = str_replace(chr(32),'+',$sStr);$/;"	v
+s_controller	account_service.php	/^    $s_controller = new user();$/;"	v
+s_extra_data	run/user.class.php	/^        $s_extra_data = urldecode($a_params['extra_data']);$/;"	v
+s_func	run/user.class.php	/^        $s_func   = $a_verify[$i_type][0].'Verify';\/\/根据type获取需要验证的前缀$/;"	v
+s_return	run/user.class.php	/^        $s_return = get_url_contents($s_url, $a_data, 'get', 'string');$/;"	v
+s_token	run/user.class.php	/^        $s_token = urldecode($a_params['sess_id']);\/\/access_token$/;"	v
+s_uid	run/user.class.php	/^            $s_uid = $a_extra[1];$/;"	v
+s_uid	run/user.class.php	/^            $s_uid = $a_uid[0];$/;"	v
+s_uid	run/user.class.php	/^        $s_uid = $a_extra['uid'];$/;"	v
+s_uid	run/user.class.php	/^        $s_uid = $s_extra_data;$/;"	v
+s_uids	run/user.class.php	/^            $s_uids = $a_extra['userid'];$/;"	v
+s_url	common/functions.php	/^    $s_url = IGG_GAMELOG_URL;$/;"	v
+s_url	common/functions.php	/^    $s_url = UID_CHANGE_URL;$/;"	v
+s_url	run/user.class.php	/^        $s_url = $a_verify[$i_type][1];$/;"	v
+s_user_id	run/user.class.php	/^        $s_user_id = urldecode($a_params['user_id']);$/;"	v
+saddr	common/functions.php	/^    $saddr = 0;$/;"	v
+safe_uid_change_to_int	common/functions.php	/^function safe_uid_change_to_int($channel_id, $key)$/;"	f
+sdkver	run/user.class.php	/^            $sdkver = $a_extra['sdkversion'];$/;"	v
+sdkver	run/user.class.php	/^            $sdkver = $a_extra[0];$/;"	v
+second	common/socket_handler.class.php	/^            $second = dechex(ord($data[$i]) & 0xF);$/;"	v
+select_action	account_service.php	/^function select_action()$/;"	f
+send	common/socket_handler.class.php	/^    public function send($data)$/;"	f
+send2	common/socket_handler.class.php	/^    public function send2($host, $port, $data)$/;"	f
+send_big_msg	common/socket.class.php	/^    function send_big_msg($msg, $pkg_len_size)$/;"	f
+sendmsg	common/socket.class.php	/^	function sendmsg($msg)$/;"	f
+sendmsg_without_returnmsg	common/socket.class.php	/^	function sendmsg_without_returnmsg($msg)$/;"	f
+seqno	common/functions.php	/^    $seqno = 0;$/;"	v
+set_log_directory	common/logger.class.php	/^	public function set_log_directory($directory)$/;"	f
+sign	common/functions.php	/^    $sign = $_REQUEST['sign'];$/;"	v
+sign	common/functions.php	/^    $sign = UID_CHANGE_SIGN;$/;"	v
+sign	run/user.class.php	/^        $sign = make_md5_sign($a_data, $pri_key);$/;"	v
+sign	run/user.class.php	/^        $sign = md5($app_secret . '||' . $time . $s_token);$/;"	v
+sign_string	common/functions.php	/^    $sign_string = "";$/;"	v
+sign_string	common/functions.php	/^    $sign_string = http_build_query($data) . "&sign=" . IGG_GAMELOG_KEY;$/;"	v
+sign_type	common/functions.php	/^    $sign_type = $_REQUEST['sign_type'];$/;"	v
+signature	common/functions.php	/^    $signature = md5($sign_string);$/;"	v
+signature	common/functions.php	/^    $signature = md5(http_build_query($data) . "&sign=" . $sign);$/;"	v
+size	common/logger.class.php	/^				$size = filesize ("$test_name");$/;"	v
+size	common/security.class.php	/^        $size = mcrypt_get_block_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_ECB);$/;"	v
+socket	common/socket.class.php	/^class socket$/;"	c
+socket	common/socket_handler.class.php	/^    private $socket = NULL;$/;"	v
+socket_handler	common/socket_handler.class.php	/^class socket_handler$/;"	c
+str	common/functions.php	/^    $str = '';$/;"	v
+str_msg	common/web_utils.php	/^	$str_msg = "<script language=javascript>\\n";$/;"	v
+td	common/security.class.php	/^        $td = mcrypt_module_open(MCRYPT_RIJNDAEL_128, '', MCRYPT_MODE_ECB, '');$/;"	v
+tdpvnVerify	run/user.class.php	/^    public function tdpvnVerify($aParams, $sUrl)$/;"	f
+test_name	common/logger.class.php	/^			$test_name = sprintf("%s%0{$this->file_appendix_len}d", $file_name, $i);$/;"	v
+time	common/functions.php	/^    $time = time();$/;"	v
+time	common/socket.class.php	/^		$time = time() ;$/;"	v
+time	run/user.class.php	/^        $time = time();$/;"	v
+timestamp	common/functions.php	/^    $timestamp = time();$/;"	v
+tmp	common/socket.class.php	/^                $tmp = unpack('Lpkg_len', substr($read_buf, 0, $pkg_len_size));$/;"	v
+token	run/user.class.php	/^        $token = urldecode($a_params['sess_id']);\/\/access_token$/;"	v
+trace	common/logger.class.php	/^	public function trace($message)$/;"	f
+transports	common/web_utils.php	/^		$transports = "ssl:\/\/";$/;"	v
+transports	common/web_utils.php	/^		$transports = "tcp:\/\/";$/;"	v
+transports	common/web_utils.php	/^	$transports = "";$/;"	v
+uid_change_to_int	common/functions.php	/^function uid_change_to_int($channel_id, $key)$/;"	f
+url	1.php	/^$url = "http:\/\/10.1.1.238\/platform\/www\/logincheck\/account_service.php";$/;"	v
+url	common/functions.php	/^            $url = is_array($data) ? $url.'?'.http_build_query($data) : $url . '?' .$data ;$/;"	v
+url	common/functions.php	/^        $url = (false === strpos($url, 'http:\/\/') && false === strpos($url, 'https:\/\/'))$/;"	v
+url	common/web_utils.php	/^	    $url = MOLE_PAY_FAILURE_URL ;$/;"	v
+url	common/web_utils.php	/^	    $url = MOLE_PAY_SUCCESS_URL ;$/;"	v
+url	common/web_utils.php	/^	$url = "";$/;"	v
+urlarr	common/web_utils.php	/^	$urlarr     = parse_url($url);$/;"	v
+user	run/user.class.php	/^class user$/;"	c
+userId	run/user.class.php	/^        $userId = safe_uid_change_to_int($aParams['channel_id'], $res['open_id_str']);$/;"	v
+user_id	run/user.class.php	/^        $user_id = $a_params['user_id'];$/;"	v
+user_id	run/user.class.php	/^        $user_id = $a_result['member']['IDN'];$/;"	v
+verify	account_service.php	/^function verify()$/;"	f
+verify	run/user.class.php	/^    public function verify($a_params)$/;"	f
+visitorVerify	run/user.class.php	/^    public function visitorVerify($a_params,$s_url)$/;"	f
+want	common/socket.class.php	/^        $want = strlen($msg);$/;"	v
+warn	common/logger.class.php	/^	public function warn($message)$/;"	f
+write_len	common/socket.class.php	/^        $write_len = 0;$/;"	v
+write_log	common/functions.php	/^function write_log($type, $file, $line, $func, $info)$/;"	f

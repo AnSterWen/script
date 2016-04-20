@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>支付失败</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<style type="text/css">
+	  .action {
+		margin-left:5%;
+		height: auto;
+		overflow: hidden;	
+	  }
+	  .button {
+		background-color: #eeeeee;
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+		background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+		background-image: linear-gradient(top, #eeeeee, #cccccc);
+		border: 1px solid #ccc;
+		border-bottom: 1px solid #bbb;
+		border-radius: 3px;
+		color: #333;
+		padding: 8px 0;
+		text-align: center;
+		text-shadow: 0 1px 0 #eee;
+		width: 95%;
+	  }
+	</style>
+  </head>
+  <body>
+	<div style="color: #333;font-size: 14px;font:12px/1.125 Arial,Helvetica,sans-serif">
+	    <div class="header">
+			<h1 style="margin:0px;padding:0px;height:54px;width:127px;background:url(logo.png);overflow:hidden;" title="淘米网络"></h1>
+		</div>
+		<div class="conent">
+			<p style="margin-bottom:16px;padding-top:2px;text-indent: 2em;">MyCard支付失败，错误码为：1024，请重新支付。</p>
+			<div class="action"><button class="button" id="click_button">重新支付</button></div>
+		</div>
+		<div class="footer">
+			<center><p style="text-algin=">© 2012 Taomee Inc. All rights reserved.</p></center>
+		</div>
+	  </div>
+  </body>
+  <script type="text/javascript">
+    function onButtonClickDown() {
+	    Mycard.onButtonClickDown();
+	}
+	function $(id) {
+		var obj = null;
+		if (id != undefined) {
+			obj = document.getElementById(id)
+		}
+		return obj;
+	}
+	$("click_button").addEventListener("click", onButtonClickDown);
+  </script>
+</html>

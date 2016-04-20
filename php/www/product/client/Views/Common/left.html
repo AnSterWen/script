@@ -1,0 +1,22 @@
+<div id="LeftMenu">
+  <ul>
+  	<foreach Name="response_data.item_tree" Key="key" Var="var">
+  	<li style="cursor:pointer" id="li_img_[$key]">
+ 		<h2 id="li_title_[$key]" style="cursor:pointer" onclick="showList('[$key]')">[$var.title]</h2>   
+ 		<ul id="li_child_[$key]">
+ 			<foreach Name="var.list" Key="sub_key" Var="sub_var">
+ 			<li>
+				<if $response_data.color_flag == $sub_var>
+                	<a id="[$sub_var]" name="left_a" style="color:#390" href="javascript:loadMainRight('[$sub_var]');">[$sub_key]	</a>
+				<else>
+					<a id="[$sub_var]" name="left_a" style="color:#666" href="javascript:loadMainRight('[$sub_var]');">[$sub_key]</a>
+				</if>
+			</li>
+ 			</foreach>
+ 		</ul>
+  	</li>
+  	</foreach>
+  	<input type="hidden" id="last_highlight" name="last_highlight" value="[$response_data.color_flag]" />  
+  </ul>
+</div>
+<img src="html/images/ge.gif" width="120" height="1" />

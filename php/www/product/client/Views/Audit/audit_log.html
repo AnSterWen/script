@@ -1,0 +1,77 @@
+<div class="page_title">操作审计</div>
+
+<form method="post" action="index.php">
+<table style="margin-left:5px">
+	<tr><td>
+		<input type="hidden" name="m" id="m" value="common" />
+		<input type="hidden" name="a" id="a" value="log" />
+		<if $response_data.err_str>
+        	<span class="c_red f_14">[$response_data.err_str]</span>
+        </if>
+	</td></tr>
+</table>
+<div class="div_query">
+	<span class="c_orange f_12">类别</span>
+	<select id="type" name="type">
+		<option value="">全部</option>
+		<foreach Name="response_data.game_type" Key="key" Var="var"> 
+	    	<if $response_data.query_data.type == $var && $response_data.query_data.type != NULL>
+	            <option value="[$var]" selected="selected">[$var]</option>
+	        <else>
+	            <option value="[$var]">[$var]</option>
+	        </if>
+	    </foreach>
+	</select>
+	<span class="c_orange f_12">用户ID</span>
+	<input type="text" class="inp_j" id="user_id" name="user_id" value="[$response_data.query_data.user_id]" />
+	<span class="c_orange f_12">用户名</span>
+	<input type="text" class="inp_j" id="user_name" name="user_name" value="[$response_data.query_data.user_name]" />
+	<span class="iblock field-name">操作时间段:</span>
+	<input type="text" class="Wdate" id="date_f" name="date_f" value="[$response_data.query_data.date_f]" 
+	       style="width: 100px;" onclick="WdatePicker({position:{top:'under'}})" />
+	<input type="text" class="Wdate" id="date_t" name="date_t" value="[$response_data.query_data.date_t]" 
+	       style="width: 100px;" onclick="WdatePicker({position:{top:'under'}})" />
+	&nbsp;&nbsp;&nbsp;<input type="image" src="html/images/button_select.gif" style="vertical-align: middle;" />
+</div>
+</form>
+<if !@empty($response_data.log_list)>
+<table class="right_table" style="width:838px;margin:0 0 0 5px;table-layout: fixed; word-wrap: break-word;">
+	<tr>
+		<td class="td_row_title">类别</td>
+		<td class="td_row_title">用户ID</td>
+		<td class="td_row_title">用户名</td>
+		<td class="td_row_title">用户ip</td>
+		<td class="td_row_title">商品/统计项id</td>
+		<td class="td_row_title">操作</td>
+		<td class="td_row_title">日期</td>
+	</tr>
+	<foreach Name="response_data.log_list" Key="key" Var="var">
+		<if 1 == $key % 2>				
+		<tr class="tr_odd">
+		<else>
+		<tr>
+		</if>
+			<td align="center">[$var.game]</td>
+			<td align="center">[$var.uid]</td>
+			<td align="center">[$var.uname]</td>
+			<td align="center">[$var.ip]</td>
+			<td align="center">[$var.item]</td>
+			<td align="center">[$var.desc]</td>
+			<td align="center">[$var.time]</td>
+		</tr>
+	</foreach>
+	<tr>
+		<td valign="middle" colspan="7" align="center">
+			<table class="page_bar">
+				<tr>
+					<td>[@htmlspecialchars_decode($response_data.page_bar)]</td>
+					<td>[@htmlspecialchars_decode($response_data.goto_bar)]</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<else>
+<span style="margin-left:20px;font-size:14px;color:#ff0000">根据条件，没有查询到相应的结果</span>
+</if>
+<script type="text/javascript" src="html/js/DatePicker/WdatePicker.js"></script>
