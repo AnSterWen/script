@@ -1,0 +1,19 @@
+#!/usr/bin/expect
+
+proc scp {user password ip file} {
+    set timeout 600
+    spawn scp -p $file $user@$ip:/root/lush/
+    expect {  
+    "*yes/no" { send "yes\r"; exp_continue}  
+    "*password:" { send "$password\r" }  
+    }  
+    expect eof
+}
+
+set file     [lindex $argv 0]
+set ipfile [open /tmp/onlineip.txt]
+while {[gets $ipfile ip] != -1} {
+    puts $ip
+    scp root 123456 $ip $file
+    puts "##############################"
+}

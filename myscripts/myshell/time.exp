@@ -1,0 +1,3 @@
+#!/usr/bin/expect
+set time [exec date "+%Y%m%d" -d "-2 day"]
+puts $time

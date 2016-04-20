@@ -1,0 +1,16 @@
+#!/usr/bin/expect
+set ip [lindex $argv 0]
+proc login {user ip password} {
+    set timeout 10
+    spawn ssh $user@$ip 
+    expect {
+        "(yes/no)?" {send "yes\n";exp_continue}
+        "*password" {send "$password\n"}
+    }
+    expect "\\$"
+    send "cd /tmp\n"
+    interact
+
+}
+
+login zhu  $ip 123456

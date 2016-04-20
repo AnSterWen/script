@@ -1,0 +1,26 @@
+#!/usr/bin/expect
+proc cmd {user password ip } {
+    set time [exec date "+%F%T"]
+    spawn ssh $user@$ip
+    expect {  
+    "*yes/no" { send "yes\r"; exp_continue}  
+    "*password:" { send "$password\r" }  
+    }  
+    expect "#"
+    send "cd /root/lush\n"
+    expect "#"
+    send "tar zxvf gateway_svc.tar.gz && echo $time >>time.txt\n"
+    expect "#"
+    send "sleep 5\n"
+    expect "#"
+    send "exit\n"
+    interact
+}
+
+
+set ipfile [open /tmp/onlineip.txt]
+while {[gets $ipfile ip] != -1} {
+    puts $ip
+    cmd root 123456 $ip 
+    puts "##############################"
+}

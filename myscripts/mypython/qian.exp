@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+set ip 192.168.56.102
+set user root
+set password 123456
+set timeout 10
+spawn ssh $user@$ip
+expect {
+"*password:" { send "$password\r" }
+}
+expect "]*"
+send "screen\n"
+expect "]*"
+send "ping www.baidu.com\n"
+

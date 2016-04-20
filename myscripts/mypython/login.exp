@@ -1,0 +1,116 @@
+#!/usr/bin/expect
+
+proc login {user ip password} {
+    set timeout 10
+    spawn ssh $user@$ip 
+    expect {
+        "(yes/no)?" {send "yes\n";exp_continue}
+        "*password" {send "$password\n"}
+    } 
+    interact
+}
+
+set stg [lindex $argv 0]
+set war [lindex $argv 1]
+if {$stg == "stg1"} {
+    set ip [exec grep -w $war  war-ip-stg1.txt | awk "{print \$2}"]
+} elseif {$stg == "stg2"} {
+    set ip [exec grep -w $war  war-ip-stg2.txt | awk "{print \$2}"]
+} else {
+    puts "stg1 or stg2"
+}
+puts $ip
+login root $ip 123456
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

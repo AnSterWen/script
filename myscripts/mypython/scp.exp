@@ -1,0 +1,15 @@
+#!/usr/bin/expect
+set ip1 [lindex $argv 0]
+set ip2 [lindex $argv 1]
+set war [lindex $argv 2]
+set timeout 10
+
+spawn scp -r root@$ip1:/opt/jboss-as-7.1.1.Final/standalone/deployments/$war root@$ip2:/root/
+
+expect {
+    "(yes/no)?" {send "yes\n";exp_continue}
+    "*password" {send "123456\n";exp_continue}
+    "*password" {send "123456\n"}
+}
+#expect eof
+#interact

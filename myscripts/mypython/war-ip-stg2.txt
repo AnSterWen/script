@@ -1,0 +1,191 @@
+pafb-acing.war
+acct-web.war
+cip-web.war
+pinganfuweb.war
+opsweb.war
+scheduler.war
+goutong.war
+configcenter.war
+ops.war
+maintenance.war
+cashier-web.war 192.168.20.157
+mtp-web.war 192.168.68.145
+transcore-web.war 192.168.20.161
+cbp-web.war 192.168.20.109
+pafm-fs.war 192.168.68.68
+cstc-web.war 192.168.20.111
+mishd-web.war 192.168.20.113
+ncmsweb.war 192.168.28.34
+ncms.war
+oms.war 192.168.20.117
+omsweb.war 192.168.28.36
+mcp-web.war 192.168.20.125
+feecore-web.war 192.168.20.127
+mbp-web.war 192.168.20.129
+newcardfront.war 192.168.21.43
+newcard.war 192.168.21.45
+baps-web.war 192.168.21.47
+tms-web.war 192.168.21.49
+iaps-web.war 192.168.68.119
+iaps-app.war 192.168.21.57
+posb-app.war 192.168.21.53
+posb-web.war 192.168.68.115
+posp-app.war 192.168.21.55
+posp-web.war 192.168.68.117
+risk-ipinfo.war 192.168.21.19
+risk-rcbl.war 192.168.21.21
+risk-rccs.war 192.168.21.23
+risk-rcdps.war 192.168.21.25
+risk-rcfs.war 192.168.21.27
+risk-rcint.war 192.168.21.29
+risk-rcps.war 192.168.21.31
+risk-rcras.war 192.168.21.33
+risk-rcrs.war 192.168.21.35
+risk-rcbs.war 192.168.21.37
+risk-aml.war 192.168.21.39
+risk-quota.war 192.168.21.110
+risk-rcacnts.war 192.168.21.114
+fncp-bcms.war 192.168.21.81
+fncp-fdcs.war 192.168.21.83
+fncp-feis.war 192.168.21.85
+fncp-fmgw-app.war 192.168.21.87
+fncp-fmgw-web.war 192.168.68.124
+fncp-fneo.war 192.168.21.89
+fncp-frcs.war 192.168.21.91
+paff.war 192.168.20.144
+paffmqws.war 192.168.21.98
+paffmqweb.war
+caps.war
+acr-web.war
+mkt-web.war
+mpmt-web.war
+pvsn.war
+paffpassport.war
+paffpassportweb.war
+coscore.war
+paycore-web.war
+msp-web.war
+gtproxy-montnets.war
+gtproxy-xuanwu.war
+gtproxy-pa.war
+gtproxy.war
+fncp-fnei.war
+cmsproxy.war
+cmsweb.war
+FNCP-FXO.war
+FNCP-ROUTER.war
+risk-rcsc.war
+ncgms.war
+newcardgm.war
+ncops.war
+ncporweb.war
+nctrc.war
+nctrs.war
+oms-tss.war
+solr.war
+lbse.war 192.168.21.222
+mcm-web.war 192.168.68.130
+fncp-fm-app.war 192.168.21.166
+fncp-fm-web.war 192.168.28.49
+paff-gtapp.war 192.168.25.28
+risk-rcoms.war 192.168.28.59
+risk-rcomss.war 192.168.25.20
+risk-rcvfc.war 192.168.25.22
+risk-encp.war 192.168.25.24
+mpmtweb-web.war 192.168.68.184
+fenlebao.war 192.168.20.141
+fenlebaoweb.war 192.168.68.123
+pafb-acing.war
+acct-web.war
+cip-web.war
+pinganfuweb.war
+opsweb.war
+scheduler.war
+goutong.war
+configcenter.war
+ops.war
+maintenance.war
+cashier-web.war 192.168.20.69
+mtp-web.war 192.168.68.64
+transcore-web.war 192.168.20.73
+cbp-web.war 192.168.20.81
+pafm-fs.war 192.168.68.66
+cstc-web.war 192.168.20.101
+mishd-web.war 192.168.20.103
+ncmsweb.war 192.168.28.30
+ncms.war 192.168.20.105
+oms.war 192.168.20.107
+omsweb.war 192.168.28.32
+mcp-web.war 192.168.20.119
+feecore-web.war 192.168.20.121
+mbp-web.war 192.168.20.123
+newcardfront.war 192.168.20.178
+newcard.war 192.168.20.180
+baps-web.war 192.168.20.182
+tms-web.war 192.168.20.184
+iaps-app.war 192.168.20.196
+iaps-web.war 192.168.68.105
+posb-app.war 192.168.20.190
+posb-web.war 192.168.68.101
+risk-ipinfo.war 192.168.20.83
+risk-rcbl.war 192.168.20.85
+risk-rccs.war 192.168.20.87
+risk-rcdps.war 192.168.20.89
+risk-rcfs.war 192.168.20.91
+risk-rcint.war 192.168.20.93
+risk-rcps.war 192.168.20.95
+risk-rcras.war 192.168.20.97
+risk-rcrs.war 192.168.20.99
+risk-rcbs.war 192.168.21.11
+risk-aml.war 192.168.21.13
+risk-quota.war 192.168.21.104
+risk-rcacnts.war 192.168.21.108
+fncp-bcms.war 192.168.20.131
+fncp-fdcs.war 192.168.20.133
+fncp-feis.war 192.168.20.135
+fncp-fmgw-app.war 192.168.20.170
+fncp-fmgw-web.war
+fncp-fneo.war
+fncp-fnei.war
+fncp-frcs.war
+paffmqws.war 192.168.21.116
+paffmqweb.war 192.168.28.16
+caps.war 192.168.21.59
+acr-web.war
+mkt-web.war
+mpmt-web.war
+pvsn.war
+paffpassport.war
+paffpassportweb.war
+coscore.war
+paycore-web.war
+msp-web.war
+gtproxy-montnets.war
+gtproxy-xuanwu.war
+gtproxy-pa.war
+gtproxy.war
+posp-web.war
+posp-app.war
+cmsproxy.war
+cmsweb.war
+FNCP-FXO.war
+FNCP-ROUTER.war
+risk-rcsc.war
+ncgms.war
+newcardgm.war
+ncops.war 192.168.21.140
+ncporweb.war 192.168.68.149
+nctrc.war 192.168.21.142
+nctrs.war 192.168.21.144
+oms-tss.war 192.168.21.232
+solr.war 192.168.21.213
+lbse.war
+risk-rcomss.war
+risk-rcoms.war
+mcm-web.war
+fncp-fm-app.war
+fncp-fm-web.war
+paff-gtapp.war
+risk-rcvfc.war
+risk-encp.war
+mpmtweb-web.war

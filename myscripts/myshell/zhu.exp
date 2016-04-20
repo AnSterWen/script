@@ -1,0 +1,90 @@
+#!/usr/bin/expect
+
+set names {
+        online1 127.0.0.1
+        online2 127.0.0.2
+        online3 127.0.0.3
+        db1 127.0.0.1
+        db2 127.0.0.2
+        db3 127.0.0.3
+        gateway1 127.0.0.1
+        gateway2 127.0.0.2
+        gateway3 127.0.0.3
+        login 10.1.16.65
+        switch 10.1.16.65
+        www 10.1.16.65
+}
+
+proc login {user ip password} {
+    set timeout 10
+    spawn ssh $user@$ip 
+    expect {
+        "(yes/no)?" {send "yes\n";exp_continue}
+        "*password" {send "$password\n"}
+    }
+    interact
+
+}
+#login root  $ip "T)rL&,y!F#"
+set name [lindex $argv 0]
+if {$name == "-h"} {
+     dict for {key value} $names {
+         puts "$key =====>> $value"
+     }
+     exit
+} elseif {[regexp {[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*} $name]} {
+    set ip $name
+} elseif {[dict exists $names $name]} {
+      set ip [dict get $names $name]
+} elseif {[dict size [dict filter $names key $name*]]} {
+     dict for {key value} [dict filter $names key $name*] {
+         puts "$key =====>> $value"
+     }
+         exit
+} else {
+    dict for {key value} $names {
+     puts "$key =====>> $value"
+    }
+    exit
+}
+#set a [dict keys $names]
+#set a [dict values $names]
+#dict for {key value} $names {
+#    #puts $key
+#    if {[dict exists $value $name]} {
+#        puts $value
+#    }
+#}
+#dict with names {
+#    dict for {key value} $online {
+#    puts $key
+#    puts $value
+#    }
+#}
+#foreach server "online db gateway login switch" {
+#    if {$name == $server} {
+#        puts [dict get $names $server]
+#        exit
+#    } elseif {[dict exists $names $server $name]} {
+#          set ip [dict exists $names $server $name]
+#    } else {
+#          puts [dict get $names]
+#          exit
+#    }
+#}
+# elseif {[regexp {[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*} $name]} {
+
+login root  $ip "123456"
+
+
+
+
+
+
+
+
+
+
+
+
+

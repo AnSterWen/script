@@ -1,0 +1,10 @@
+#!/bin/bash
+for dbname in $(seq 400001 400025)
+do
+    echo ${dbname}0
+    echo ${dbname}1
+    if [ ! -d db_${dbname}0 ]; then
+        cp -r db_0 db_${dbname}0 
+        cp -r db_1 db_${dbname}1
+    fi
+done

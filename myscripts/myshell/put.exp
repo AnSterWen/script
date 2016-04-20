@@ -1,0 +1,27 @@
+#!/usr/bin/expect
+
+proc scp {user password ip file} {
+    set timeout 600
+    spawn scp -p $file $user@$ip:/root/lush/
+    expect {  
+    "*yes/no" { send "yes\r"; exp_continue}  
+    "*password:" { send "$password\r" }  
+    }  
+    expect eof
+}
+
+set file     [lindex $argv 1]
+set country  [lindex $argv 0]
+if {$country == "hg"} {
+    set ip 103.6.152.87
+} elseif {$country == "tg"} {
+    set ip 61.91.68.66
+} elseif {$country == "ml"} {
+    set ip 103.242.64.121
+} elseif {$country == "tw"} {
+    set ip 112.121.92.113
+} else {
+    puts "the arguments must be hg|tg|ml|tw"
+    exit
+}
+scp kaka kaka $ip $file

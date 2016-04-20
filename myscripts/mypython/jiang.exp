@@ -1,0 +1,7 @@
+#!/usr/bin/expect
+spawn ssh root@192.168.56.102
+expect {
+    "(yes/no)?" {send "yes\n";exp_continue}
+    "*password" {send "123456\n"}
+}
+interact

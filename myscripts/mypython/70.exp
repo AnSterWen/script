@@ -1,0 +1,12 @@
+#!/usr/bin/expect -f
+#set ip 10.189.6.112
+set ip [lindex $argv 1]
+set password [lindex $argv 2]
+set user [lindex $argv 0]
+set timeout 10
+spawn ssh $user@$ip
+expect {
+"*password:" { send "$password\r" }
+}
+interact
+

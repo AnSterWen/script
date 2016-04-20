@@ -1,0 +1,65 @@
+#!/usr/bin/expect
+
+set names {
+        online5 172.16.96.2
+        online6 172.16.96.2
+        online7 172.16.96.2
+        online8 172.16.96.2
+        db5 172.16.96.2
+        db6 172.16.96.2
+        db7 172.16.96.2
+        db8 172.16.96.2
+        gateway 172.16.96.1
+        login 172.16.96.7
+        switch 172.16.96.7
+        www 172.16.96.1
+        mysql_m 172.16.96.3
+        mysql_s 172.16.96.4
+}
+
+proc login {user ip password} {
+    set timeout 10
+    spawn ssh $user@$ip 
+    expect {
+        "(yes/no)?" {send "yes\n";exp_continue}
+        "*password" {send "$password\n"}
+    }
+    interact
+
+}
+set name [lindex $argv 0]
+if {$name == "-h"} {
+     dict for {key value} $names {
+         puts "$key =====>> $value"
+     }
+     exit
+} elseif {[regexp {[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*} $name]} {
+    set ip $name
+} elseif {[dict exists $names $name]} {
+      set ip [dict get $names $name]
+} elseif {[dict size [dict filter $names key $name*]]} {
+     dict for {key value} [dict filter $names key $name*] {
+         puts "$key =====>> $value"
+     }
+         exit
+} else {
+    dict for {key value} $names {
+     puts "$key =====>> $value"
+    }
+    exit
+}
+#login root  $ip "T)rL&,y!F#"
+login tdpuser  $ip "LSy&gpW4(!"
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+#!/usr/bin/expect -f
+set ip 192.168.0.70
+set ip1 [lindex $argv 0]
+set password Paic\#234
+set timeout 10
+spawn ssh root@$ip
+expect {
+"*password:" { send "$password\r" }
+}
+expect "]*"
+send "cd scripts\n"
+expect "]*"
+send "./70.exp\n"
+expect "]*"
+send "./70.exp $ip1\n"
+interact
+

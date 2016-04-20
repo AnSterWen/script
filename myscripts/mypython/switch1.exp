@@ -1,0 +1,20 @@
+#!/usr/bin/expect
+set count [lindex $argv 0]
+set qian "千山鸟飞绝"
+set wan  "万径人踪灭"
+set gu   "孤舟蓑笠翁"
+set du   "独钓寒江雪"
+
+switch  $count {
+    qian {
+        puts "my name is $qian" 
+}   wan {
+        puts "my name is $wan"
+}   gu {
+        puts "my name is $gu"
+}   du {
+        puts "my name is $du"
+}   default {
+        puts "$qian\n$wan\n$gu\n$du"
+}
+}

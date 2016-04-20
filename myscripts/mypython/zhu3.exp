@@ -1,0 +1,36 @@
+#!/usr/bin/expect -f
+
+set ip 192.168.0.70
+set ip1 [lindex $argv 0]
+set cmd [lindex $argv 1]
+set password Paic#234
+set timeout 20
+spawn ssh root@$ip
+expect {
+"*password:" { send "$password\r" }
+}
+expect "]*"
+send "cd scripts\n"
+
+if {$ip1 == "70"} {
+    interact 
+} elseif {$ip1 == "stg1"} {
+    expect "]*"
+    send "grep $cmd *stg1*\n"
+    interact
+} elseif {$ip1 == "stg2"} {
+    expect "]*"
+    send "grep $cmd *stg2*\n"
+    interact
+} elseif {$ip1 == "112"} {
+    expect "]*"
+    send "./70.exp svnuser 10.189.6.112 $password\n"
+    interact
+} else {
+    expect "]*"
+    send "./70.exp svnuser 10.189.6.112 $password\n"
+    expect "]*"
+    send "./70.exp wls81 $ip1 $password\n"
+    interact
+}
+
