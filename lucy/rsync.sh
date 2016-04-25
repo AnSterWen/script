@@ -1,0 +1,9 @@
+rsync -avz /opt/new_ahero/online71_svc/log/  kaka@10.144.215.79::log --password-file=/etc/rsyncd.passwd >/dev/null 2>&1
+rsync -avz /opt/new_ahero/online17_svc/log/  kaka@10.144.215.79::log --password-file=/etc/rsyncd.passwd >/dev/null 2>&1
+rsync -avz /opt/new_ahero/online18_svc/log/  kaka@10.144.215.79::log --password-file=/etc/rsyncd.passwd >/dev/null 2>&1
+rsync -avz /opt/new_ahero/online19_svc/log/  kaka@10.144.215.79::log --password-file=/etc/rsyncd.passwd >/dev/null 2>&1
+rsync -avz /opt/new_ahero/online72_svc/log/  kaka@10.144.215.79::log --password-file=/etc/rsyncd.passwd >/dev/null 2>&1
+rsync -avz /opt/new_ahero/online73_svc/log/  kaka@10.144.215.79::log --password-file=/etc/rsyncd.passwd >/dev/null 2>&1
+rsync -avz /opt/new_ahero/battle17_svc/log/  kaka@10.144.215.79::log --password-file=/etc/rsyncd.passwd >/dev/null 2>&1
+rsync -avz /opt/new_ahero/battle18_svc/log/  kaka@10.144.215.79::log --password-file=/etc/rsyncd.passwd >/dev/null 2>&1
+rsync -avz /opt/new_ahero/battle19_svc/log/  kaka@10.144.215.79::log --password-file=/etc/rsyncd.passwd >/dev/null 2>&1

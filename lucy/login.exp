@@ -1,0 +1,37 @@
+#!/usr/bin/expect
+proc login {user ip password} {
+    set timeout 80
+    spawn ssh $user@$ip 
+    expect {
+        "(yes/no)?" {send "yes\n";exp_continue}
+        "*password" {send "$password\n"}
+    }
+    interact
+
+}
+
+set version [lindex $argv 0]
+set name [lindex $argv 1]
+set count1 [exec mysql -uroot lush -B -N -e "select count(*) from ip where version = '$version' and server_name like '$name%'"]
+set count2 [exec mysql -uroot lush -B -N -e "select count(*) from ip where version = '$version' and server_name = '$name'"]
+if { $version == "-h" } {
+    set help [exec mysql -uroot lush -B -N -e "select * from ip"]
+    puts "$help"
+    exit
+} elseif {[regexp {[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*} $version]} {
+    set ip $version
+    login rworldadmin  $ip  L:qAG\$ji
+} elseif {$count1 == 0 } {
+    puts "the $name not exits,please select"
+    exit
+} elseif {$count1 >= 1} {
+    if {$count2 == 0} {
+        set help [exec mysql -uroot lush -B -N -e "select * from ip where version = '$version' and server_name like '$name%'"]
+	puts "$help"
+	exit
+    } elseif {$count2 == 1} {
+        set ip [exec mysql -uroot lush -B -N -e "select ip from ip where version = '$version' and server_name = '$name'"]
+        login rworldadmin  $ip  L:qAG\$ji
+    }
+}
+

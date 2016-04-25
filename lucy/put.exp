@@ -1,0 +1,22 @@
+#!/usr/bin/expect -f
+set user rworldadmin
+set password L:qAG\$ji
+set timeout 100
+proc scp {user password ip file} {
+    set timeout 600
+    spawn scp -rp  $file  $user@$ip:/home/rworldadmin/lush
+    #spawn scp -rp  $file  $user@$ip:/opt/new_ahero/login_svc
+    expect {
+        "(yes/no)?" { send "yes\n";exp_continue }
+        "*password:" { send "$password\r" }
+    } 
+    expect eof
+
+}
+set file     [lindex $argv 0]
+set ip [lindex $argv 1]
+scp rworldadmin L:qAG\$ji  $ip $file
+
+
+
+
